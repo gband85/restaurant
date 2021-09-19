@@ -1,21 +1,23 @@
 const loadPage = () => {
      const content = document.querySelector("#content");
+     //create header
     const header=document.createElement("header");
     header.id="header";
+    //navbar
     const nav=document.createElement("nav");
     nav.id="navbar";
     header.appendChild(nav);    
-    //h1.textContent="Test"
+//main section
 const main = document.createElement("main");
 main.id="main";
+//footer
 const footer = document.createElement("footer");
 footer.id="footer";
+//add to content div
 content.appendChild(header);
 content.appendChild(main);
 content.appendChild(footer);
-    //return header;
-    //document.getElementById("content").append(main);
-    //console.log("Hello!");
+
 }
 
 export default loadPage
