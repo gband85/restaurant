@@ -1,0 +1,1 @@
+(()=>{"use strict";(()=>{const e=document.createElement("main");document.querySelector("#content").append(e),console.log("Hello!")})()})();
