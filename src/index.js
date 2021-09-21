@@ -1,3 +1,3 @@
-import loadPage from './loadPage';
+import home from './home';
 
-loadPage();
+home();

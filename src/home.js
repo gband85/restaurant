@@ -1,4 +1,4 @@
-const loadPage = () => {
+const home = () => {
      const content = document.querySelector("#content");
      //create header
     const header=document.createElement("header");
@@ -20,4 +20,4 @@ content.appendChild(footer);
 
 }
 
-export default loadPage
+export default home
