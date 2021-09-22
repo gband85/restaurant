@@ -1,0 +1,14 @@
+#navbar ul li {
+    display: inline-block;
+    padding: 0 20px;
+}
+#navbar ul li a {
+    text-decoration: none;
+}
+
+#navbar ul {
+    list-style: none;
+}
+.selected {
+    background-color: aquamarine;
+}
