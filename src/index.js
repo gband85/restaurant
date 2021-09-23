@@ -3,7 +3,7 @@ import menuTab from './menuTab';
 import contactTab from './contactTab';
 
 window.onload=function() {
-    homeTab();
+   homeTab();
 }
 document.querySelector("#home-link").addEventListener("click", function() {
     homeTab();

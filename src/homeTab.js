@@ -1,5 +1,7 @@
 const homeTab = () => {
     const content = document.querySelector("#content");
+    const homeDiv = document.createElement("div");
+    homeDiv.id="home-div";
     //create header
     const header = document.createElement("header");
     header.id = "header";
@@ -44,10 +46,10 @@ const homeTab = () => {
     const footer = document.createElement("footer");
     footer.id = "footer";
     //add to content div
-    content.appendChild(header);
-    content.appendChild(main);
-    content.appendChild(footer);
-
+    homeDiv.appendChild(header);
+    homeDiv.appendChild(main);
+    homeDiv.appendChild(footer);
+content.appendChild(homeDiv);
 }
 
 export default homeTab

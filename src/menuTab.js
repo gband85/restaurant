@@ -1,5 +1,7 @@
 const menuTab = () => {
-    const content = document.querySelector("#content");
+    const content= document.querySelector("#content");
+    const menuDiv = document.createElement("div");
+    menuDiv.id="menu-div";
     //create header
     const header = document.createElement("header");
     header.id = "header";
@@ -13,8 +15,7 @@ const menuTab = () => {
     const homeLink = document.createElement("a");
     homeLink.href = "#";
     homeLink.textContent = "Home";
-    homeLink.classList.add("selected");
-    homeLink.id="home";
+    homeLink.id="home-link";
     home.appendChild(homeLink);
 
     const contact = document.createElement("li");
@@ -22,7 +23,7 @@ const menuTab = () => {
     const contactLink = document.createElement("a");
     contactLink.href = "#";
     contactLink.textContent = "Contact";
-    contactLink.id="contact";
+   contactLink.id="contact-link";
     contact.appendChild(contactLink);
 
     const menu = document.createElement("li");
@@ -30,7 +31,7 @@ const menuTab = () => {
     const menuLink = document.createElement("a");
     menuLink.href = "#";
     menuLink.textContent = "Menu";
-    menuLink.id="menu";
+    menuLink.id="menu-link";
     menu.appendChild(menuLink);
 
     nav.appendChild(navList);
@@ -45,10 +46,10 @@ const menuTab = () => {
     const footer = document.createElement("footer");
     footer.id = "footer";
     //add to content div
-    content.appendChild(header);
-    content.appendChild(main);
-    content.appendChild(footer);
-
+    menuDiv.appendChild(header);
+    menuDiv.appendChild(main);
+    menuDiv.appendChild(footer);
+    content.appendChild(menuDiv);
 }
 
 export default menuTab

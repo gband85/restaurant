@@ -1,5 +1,7 @@
 const contactTab = () => {
     const content = document.querySelector("#content");
+    const contactDiv = document.createElement("div");
+    contactDiv.id="contact-div";
     //create header
     const header = document.createElement("header");
     header.id = "header";
@@ -44,10 +46,10 @@ const contactTab = () => {
     const footer = document.createElement("footer");
     footer.id = "footer";
     //add to content div
-    content.appendChild(header);
-    content.appendChild(main);
-    content.appendChild(footer);
-
+    contactDiv.appendChild(header);
+    contactDiv.appendChild(main);
+    contactDiv.appendChild(footer);
+    content.appendChild(contactDiv);
 }
 
 export default contactTab
