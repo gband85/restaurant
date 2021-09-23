@@ -1,15 +1,17 @@
-import home from './home';
+import homeTab from './home';
+import menuTab from './menu';
+import contactTab from './contact';
 
 window.onload=function() {
-    home();
+    homeTab();
 }
 document.querySelector("#home").addEventListener("click", function() {
-    home();
+    homeTab();
 });
 document.querySelector("#contact").addEventListener("click", function() {
-    home();
+    contactTab();
 });
 document.querySelector("#menu").addEventListener("click", function() {
-    home();
+    menuTab();
 });
 

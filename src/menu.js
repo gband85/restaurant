@@ -1,4 +1,4 @@
-const menu = () => {
+const menuTab = () => {
     const content = document.querySelector("#content");
     //create header
     const header = document.createElement("header");
@@ -51,4 +51,4 @@ const menu = () => {
 
 }
 
-export default menu
+export default menuTab

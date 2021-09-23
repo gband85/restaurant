@@ -1,4 +1,4 @@
-const home = () => {
+const homeTab = () => {
     const content = document.querySelector("#content");
     //create header
     const header = document.createElement("header");
@@ -50,4 +50,4 @@ const home = () => {
 
 }
 
-export default home
+export default homeTab
