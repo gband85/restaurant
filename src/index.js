@@ -5,13 +5,13 @@ import contactTab from './contactTab';
 window.onload=function() {
     homeTab();
 }
-document.querySelector("#home").addEventListener("click", function() {
+document.querySelector("#home-link").addEventListener("click", function() {
     homeTab();
 });
-document.querySelector("#contact").addEventListener("click", function() {
+document.querySelector("#contact-link").addEventListener("click", function() {
     contactTab();
 });
-document.querySelector("#menu").addEventListener("click", function() {
+document.querySelector("#menu-link").addEventListener("click", function() {
     menuTab();
 });
 
