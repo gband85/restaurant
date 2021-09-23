@@ -1,8 +1,8 @@
 import home from './home';
 
-window.onload(function() {
+window.onload=function() {
     home();
-});
+}
 document.querySelector("#home").addEventListener("click", function() {
     home();
 });
