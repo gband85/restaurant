@@ -13,18 +13,21 @@ const home = () => {
     homeLink_a.href = "#";
     homeLink_a.textContent = "Home";
     homeLink_a.classList.add("selected");
+    homeLink_a.id="home";
     homeLink.appendChild(homeLink_a);
 
     const contactLink = document.createElement("li");
     const contactLink_a = document.createElement("a");
     contactLink_a.href = "#";
     contactLink_a.textContent = "Contact";
+    contactLink_a.id="contact";
     contactLink.appendChild(contactLink_a);
 
     const menuLink = document.createElement("li");
     const menuLink_a = document.createElement("a");
     menuLink_a.href = "#";
     menuLink_a.textContent = "Menu";
+    menuLink_a.id="menu";
     menuLink.appendChild(menuLink_a);
 
     nav.appendChild(navList);
