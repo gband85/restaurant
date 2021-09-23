@@ -8,27 +8,30 @@ const menu = () => {
     nav.id = "navbar";
     const navList = document.createElement("ul");
 
-    const homeLink = document.createElement("li");
-    const homeLink_a = document.createElement("a");
-    homeLink_a.href = "#";
-    homeLink_a.textContent = "Home";
-    homeLink_a.classList.add("selected");
-    homeLink_a.id="home";
-    homeLink.appendChild(homeLink_a);
+    const home = document.createElement("li");
+    home.classList.remove("selected");
+    const homeLink = document.createElement("a");
+    homeLink.href = "#";
+    homeLink.textContent = "Home";
+    homeLink.classList.add("selected");
+    homeLink.id="home";
+    home.appendChild(homeLink);
 
-    const contactLink = document.createElement("li");
-    const contactLink_a = document.createElement("a");
-    contactLink_a.href = "#";
-    contactLink_a.textContent = "Contact";
-    contactLink_a.id="contact";
-    contactLink.appendChild(contactLink_a);
+    const contact = document.createElement("li");
+    contact.classList.remove("selected");
+    const contactLink = document.createElement("a");
+    contactLink.href = "#";
+    contactLink.textContent = "Contact";
+    contactLink.id="contact";
+    contact.appendChild(contactLink);
 
-    const menuLink = document.createElement("li");
-    const menuLink_a = document.createElement("a");
-    menuLink_a.href = "#";
-    menuLink_a.textContent = "Menu";
-    menuLink_a.id="menu";
-    menuLink.appendChild(menuLink_a);
+    const menu = document.createElement("li");
+    menu.classList.add("selected");
+    const menuLink = document.createElement("a");
+    menuLink.href = "#";
+    menuLink.textContent = "Menu";
+    menuLink.id="menu";
+    menu.appendChild(menuLink);
 
     nav.appendChild(navList);
     navList.appendChild(homeLink);
