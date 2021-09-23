@@ -1,4 +1,4 @@
-const contact = () => {
+const homeTab = () => {
     const content = document.querySelector("#content");
     //create header
     const header = document.createElement("header");
@@ -9,15 +9,15 @@ const contact = () => {
     const navList = document.createElement("ul");
 
     const home = document.createElement("li");
-    home.classList.remove("selected");
+    home.classList.add("selected");
     const homeLink = document.createElement("a");
     homeLink.href = "#";
-    homeLink.textContent = "Home";
+    homeLink.textContent = "Home";    
     homeLink.id="home-link";
     home.appendChild(homeLink);
 
     const contact = document.createElement("li");
-    contact.classList.add("selected");
+    contact.classList.remove("selected");
     const contactLink = document.createElement("a");
     contactLink.href = "#";
     contactLink.textContent = "Contact";
@@ -33,9 +33,9 @@ const contact = () => {
     menu.appendChild(menuLink);
 
     nav.appendChild(navList);
-    navList.appendChild(home);
-    navList.appendChild(contact);
-    navList.appendChild(menu);
+    navList.appendChild(homeLink);
+    navList.appendChild(contactLink);
+    navList.appendChild(menuLink);
     header.appendChild(nav);
     //main section
     const main = document.createElement("main");
@@ -50,4 +50,4 @@ const contact = () => {
 
 }
 
-export default contact
+export default homeTab

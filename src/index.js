@@ -1,6 +1,6 @@
-import homeTab from './home';
-import menuTab from './menu';
-import contactTab from './contact';
+import homeTab from './homeTab';
+import menuTab from './menuTab';
+import contactTab from './contactTab';
 
 window.onload=function() {
     homeTab();
