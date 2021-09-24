@@ -1,16 +1,18 @@
 const menuTab = () => {
     const content= document.querySelector("#content");
+    content.innerHTML="";
     const menuDiv = document.createElement("div");
     menuDiv.id="menu-div";
     
     //main section
     const main = document.createElement("main");
     main.id = "main";
+    main.append(document.createElement("h1").textContent="Menu");
     //footer
     const footer = document.createElement("footer");
     footer.id = "footer";
     //add to content div
-    menuDiv.appendChild(header);
+    //menuDiv.appendChild(header);
     menuDiv.appendChild(main);
     menuDiv.appendChild(footer);
     content.appendChild(menuDiv);

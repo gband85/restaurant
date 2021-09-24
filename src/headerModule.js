@@ -32,11 +32,11 @@ const headerModule = () => {
     menu.appendChild(menuLink);
 
     nav.appendChild(navList);
-    navList.appendChild(homeLink);
-    navList.appendChild(contactLink);
-    navList.appendChild(menuLink);
+    navList.appendChild(home);
+    navList.appendChild(contact);
+    navList.appendChild(menu);
     header.appendChild(nav);
-    document.body.appendChild(header);
+    document.body.prepend(header);
 }
 
 export { headerModule }
