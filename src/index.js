@@ -1,6 +1,6 @@
 import { homeTab } from './homeTab';
-import menuTab from './menuTab';
-import contactTab from './contactTab';
+import { menuTab } from './menuTab';
+import { contactTab } from './contactTab';
 import { headerModule } from './headerModule';
 
 
