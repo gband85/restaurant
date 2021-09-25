@@ -1,17 +1,16 @@
 const homeTab = () => {
     const content = document.querySelector("#content");
     content.innerHTML="";
+    //create div
     const homeDiv = document.createElement("div");
     homeDiv.id="home-div";
-    
-    //main section
-    const main = document.createElement("main");
-    main.id = "main";
-    main.append(document.createElement("h1").textContent="Home");
+    //add testimonial
     const testimonial = document.createElement("div");
+    testimonial.id="testimonial";
     const text = document.createElement("p");
     text.innerHTML="Best place I've ever eaten!<br>-John Smith";
     testimonial.appendChild(text);
+    //add hours
     const hours = document.createElement("div");
     hours.id="hours";
     const hoursTable = document.createElement("table");
@@ -24,15 +23,11 @@ const homeTab = () => {
     <tr><td>Thursday</td><td>8AM-8PM</td></tr> \
     <tr><td>Friday</td><td>8AM-8PM</td></tr> \
     <tr><td>Saturday</td><td>12-5PM</td></tr> \
-    </tbody>');
-   // const test=
+    </tbody>');   
    hours.appendChild(hoursTable);
-    //main.append(hours);
-    //footer
-    const footer = document.createElement("footer");
-    footer.id = "footer";
-
+//add address
     const location = document.createElement("div");
+    location.id="location";
     const address = document.createElement("p");
     address.innerHTML="19125 First Street<br>North City, NE 27386";
     location.appendChild(address);
