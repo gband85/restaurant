@@ -8,7 +8,7 @@ const headerModule = () => {
     const navList = document.createElement("ul");
 
     const home = document.createElement("li");
-    //home.classList.add("selected");
+    home.id="home";
     const homeLink = document.createElement("a");
     homeLink.href = "#";
     homeLink.textContent = "Home";    
@@ -16,7 +16,7 @@ const headerModule = () => {
     home.appendChild(homeLink);
 
     const contact = document.createElement("li");
-    //contact.classList.remove("selected");
+    contact.id="contact";
     const contactLink = document.createElement("a");
     contactLink.href = "#";
     contactLink.textContent = "Contact";
@@ -24,7 +24,7 @@ const headerModule = () => {
     contact.appendChild(contactLink);
 
     const menu = document.createElement("li");
-    //menu.classList.remove("selected");
+    menu.id="menu";
     const menuLink = document.createElement("a");
     menuLink.href = "#";
     menuLink.textContent = "Menu";
