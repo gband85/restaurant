@@ -1,4 +1,7 @@
 const contactTab = () => {
+    document.querySelector("#home").classList.remove("selected");
+    document.querySelector("#contact").classList.add("selected");
+    document.querySelector("#menu").classList.remove("selected");
     const content = document.querySelector("#content");
     content.innerHTML="";
     const contactDiv = document.createElement("div");
