@@ -11,13 +11,13 @@ import { headerModule } from './headerModule';
    homeTab();
 // }
 
-document.querySelector("#home-link").addEventListener("click", function() {
+document.querySelector("#home").addEventListener("click", function() {
    homeTab();
 });
-document.querySelector("#contact-link").addEventListener("click", function() {
+document.querySelector("#contact").addEventListener("click", function() {
     contactTab();
 });
-document.querySelector("#menu-link").addEventListener("click", function() {
+document.querySelector("#menu").addEventListener("click", function() {
     menuTab();
 });
 
