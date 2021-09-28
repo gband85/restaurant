@@ -1,14 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html {
+    background-color: lightslategrey;
+}
+#content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 #navbar ul li {
     display: inline-block;
     padding: 0 20px;
+    border-top: 3px solid white;
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+    margin: 10px;
+    cursor: pointer;
 }
 #navbar ul li a {
     text-decoration: none;
 }
-
+#navbar ul li a:visited {
+color: white;
+}
+#header {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    margin-bottom: 50px;
+    color: white;
+}
 #navbar ul {
     list-style: none;
 }
 .selected {
-    background-color: aquamarine;
+    background-color: blue;
+}
+#home-div, #contact-div, #menu-div {
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    border: solid black 2px;
+    justify-content: space-evenly;
+}
+ #contact-div > div {
+border: solid lightgrey 1px;
+margin: 20px; 
+background-color: white;
+} 
+#home-div > div {
+    border: solid lightgray 1px;
+    margin: 20px;
+    background-color: white;
+}
+#menu-div > div {
+    border: solid lightgrey 1px;
+    margin: 20px;
+    padding: 10px;
+    background-color: white;
+}
+/* #testimonial {
+    border: solid black 2px;
+}
+#hours {
+    border: solid black 2px;
+}
+#location {
+    border: solid black 2px;
+} */
+#navbar a {
+    font-size: large;
 }
