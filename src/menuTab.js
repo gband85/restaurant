@@ -71,14 +71,7 @@ const menuTab = () => {
     <dd>Watermelon, mango, strawberry-banana, mixed berries, or citrus.</dd>
     </dl>
     </div>`
-    //document.createElement("p").textContent="Menu");
-    // main.append()
 
-
-    //add to content div
-    //menuDiv.appendChild(header);
-    //menuDiv.appendChild(main);
-    //menuDiv.appendChild(footer);
     content.appendChild(menuDiv);
 }
 
