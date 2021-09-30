@@ -2,7 +2,7 @@ import { homeTab } from './homeTab';
 import { menuTab } from './menuTab';
 import { contactTab } from './contactTab';
 import { headerModule } from './headerModule';
-
+import './style.css';
 
 
  //window.onload=function() {
