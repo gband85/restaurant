@@ -11,22 +11,22 @@ const homeTab = () => {
     const testimonial = document.createElement("div");
     testimonial.id="testimonial";
     const text = document.createElement("p");
-    text.innerHTML="Best place I've ever eaten!<br>-John Smith";
+    text.innerHTML="Best place I've ever eaten at!<br>-John Smith";
     testimonial.appendChild(text);
     //add hours
     const hours = document.createElement("div");
     hours.id="hours";
     const hoursTable = document.createElement("table");
     hoursTable.id="hours-table";
-    hoursTable.insertAdjacentHTML('afterbegin','<thead><tr><th colspan="2">Hours</th></tr></thead><tbody> \
-    <tr><td>Sunday</td><td>12-5PM</td></tr> \
-    <tr><td>Monday</td><td>8AM-8PM</td></tr> \
-    <tr><td>Tuesday</td><td>8AM-8PM</td></tr> \
-    <tr><td>Wednesday</td><td>8AM-8PM</td></tr> \
-    <tr><td>Thursday</td><td>8AM-8PM</td></tr> \
-    <tr><td>Friday</td><td>8AM-8PM</td></tr> \
-    <tr><td>Saturday</td><td>12-5PM</td></tr> \
-    </tbody>');   
+    hoursTable.innerHTML=`<thead><tr><th colspan="2">Hours</th></tr></thead><tbody>
+    <tr><td>Sunday</td><td>12-5PM</td></tr>
+    <tr><td>Monday</td><td>8AM-8PM</td></tr>
+    <tr><td>Tuesday</td><td>8AM-8PM</td></tr>
+    <tr><td>Wednesday</td><td>8AM-8PM</td></tr>
+    <tr><td>Thursday</td><td>8AM-8PM</td></tr>
+    <tr><td>Friday</td><td>8AM-8PM</td></tr> 
+    <tr><td>Saturday</td><td>12-5PM</td></tr> 
+    </tbody>`
    hours.appendChild(hoursTable);
 //add address
     const location = document.createElement("div");
