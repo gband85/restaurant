@@ -1,10 +1,15 @@
+
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 body, html {
     background-color: lightslategrey;
+    font-family: 'Merriweather Sans', sans-serif;
 }
 #content {
     display: flex;
@@ -13,12 +18,28 @@ body, html {
 }
 #navbar ul li {
     display: inline-block;
-    padding: 0 20px;
+    padding: 10px 30px;
     border-top: 3px solid white;
     border-left: 3px solid white;
     border-right: 3px solid white;
-    margin: 10px;
+    margin: 0 10px;
     cursor: pointer;
+}
+/* #hours {
+
+    padding: 30px;
+} */
+#hours-table {
+    /* border: 2px solid black; */
+    /* border-collapse: collapse; */
+    border-spacing: 60px 10px;
+    /* margin: 0 auto; */
+}
+#hours-table td {
+    /* border: 2px solid black; */
+    /* margin-right: 30px; */
+    width: 100px;
+    text-align: center;
 }
 #navbar ul li a {
     text-decoration: none;
@@ -29,9 +50,9 @@ color: white;
 #header {
     background-color: black;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
-    height: 50px;
+    height: 60px;
     margin-bottom: 50px;
     color: white;
 }
@@ -46,34 +67,55 @@ color: white;
     flex-direction: column;
     align-items: center;
     padding: 5px;
-    border: solid black 2px;
+    /* border: solid black 2px; */
     justify-content: space-evenly;
 }
  #contact-div > div {
 border: solid lightgrey 1px;
 margin: 20px; 
+padding: 20px;
 background-color: white;
 } 
-#home-div > div {
+#home-div  div {
     border: solid lightgray 1px;
     margin: 20px;
     background-color: white;
+    padding: 20px;
 }
 #menu-div > div {
     border: solid lightgrey 1px;
     margin: 20px;
-    padding: 10px;
+    padding: 30px;
     background-color: white;
 }
-/* #testimonial {
+.menu-section p {
+/* margin-top: 30px; */
+}
+.menu-title {
+    text-align: center;
+}
+.menu-section {
+    /* padding-bottom: 20px; */
+}
+ /* #testimonial {
     border: solid black 2px;
 }
 #hours {
     border: solid black 2px;
-}
+}*/
 #location {
-    border: solid black 2px;
-} */
+    text-align: center;
+} 
 #navbar a {
     font-size: large;
+}
+dt {
+    margin-top: 20px;
+}
+dd {
+    margin-top: 10px;
+}
+#contact-div p {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
