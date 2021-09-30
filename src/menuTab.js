@@ -10,58 +10,68 @@ const menuTab = () => {
     // //main section
     // const main = document.createElement("div");
     // main.id = "main";
+    const element=document.createElement("dl")
+    menuDiv.append()
     menuDiv.innerHTML = `
     <div class="menu-section">
-    <p>BURGERS</p>
-    <p>CLASSIC / 25<br>
-    A beef patty with caramelized onions,
+    <p class="menu-title">BURGERS</p>
+    <dl>
+    <dt>CLASSIC / 25</dt>
+    <dd>A beef patty with caramelized onions,
     pickles, crispy lettuce, and juicy
-    tomatoes.</p>
-    <p>DOUBLE / 35<br>
-    Two quarter-pounder patties stuffed
+    tomatoes.</dd>
+    <dt>DOUBLE / 35</dt>
+    <dd>Two quarter-pounder patties stuffed
     between potato buns, guaranteed to
-    fill you up.</p>
-    <p>DAREDEVIL / 40<br>
-    Three quarter-pounder patties stuffed
+    fill you up.</dd>
+    <dt>DAREDEVIL / 40</dt>
+    <dd>Three quarter-pounder patties stuffed
     between potato buns. Can you handle
-    this?</p>
+    this?</dd>
+    </dl>
     </div>
     <div class="menu-section">
-    <p>RICE MEALS</p>
-    <p>PORK STEAK / 20<br>
-    Pork steak served with rice and a side
-    of mashed potatoes, and a salad.</p>
-    <p>CORDON BLEU / 20<br>
-    With creamy cheese, served with rice
-    and mashed potatoes.</p>
-    <p>STEAK / 30<br>
-    A 20 oz. steak, medium rare, served
+    <p class="menu-title">RICE MEALS</p>
+    <dl>
+    <dt>PORK STEAK / 20</dt>
+    <dd>Pork steak served with rice and a side
+    of mashed potatoes, and a salad.</dd>
+    <dt>CORDON BLEU / 20</dt>
+    <dd>With creamy cheese, served with rice
+    and mashed potatoes.</dd>
+    <dt>STEAK / 30</dt>
+    <dd>A 20 oz. steak, medium rare, served
     with mashed potatoes and mixed
-    vegetables.</p>
+    vegetables.</dd>
+    </dl>
     </div>
     <div class="menu-section">
-    <p>SANDWICHES</p>    
-    <p>VEGAN PANINI / 15<br>
-    Roasted vegetables, in ciabatta,
-    slathered with creamy hummus.</p>
-    <p>ITALIAN SAUSAGE / 20<br>
-    Grilled Italian sausage with pickles,
-    tomatoes, and mustard, with a relish.</p>
-    <p>3-CHEESE / 20<br>
-    Swiss, cheddar, and mozzarella, in a
+    <p  class="menu-title">SANDWICHES</p>
+    <dl>
+    <dt>VEGAN PANINI / 15</dt>
+    <dd>Roasted vegetables, in ciabatta,
+    slathered with creamy hummus.</dd>
+    <dt>ITALIAN SAUSAGE / 20<dt>
+    <dd>Grilled Italian sausage with pickles,
+    tomatoes, and mustard, with a relish.</dd>
+    <dt>3-CHEESE / 20</dt>
+    <dd>Swiss, cheddar, and mozzarella, in a
     grilled sandwich slathered with
-    butter.</p>
+    butter.</dd>
+    </dl>
     </div>
     <div class="menu-section">
-    <p>DRINKS</p>
-    <p>JUICE / 5 PER GLASS<br>
-    Choice of orange, lemon, watermelon,
-    mango, grape, or strawberry.</p>
-    <p>ICED COFFEE / 10 PER GLASS<br>
-    Mixed with milk, and served over ice
-    and topped with chocolate syrup.</p>
-    <p>SHAKE / 15<br>
-    Watermelon, mango, strawberry-banana, mixed berries, or citrus.</p>
+    <p class="menu-title">DRINKS</p>
+    <dl>
+    <dt>JUICE / 5 PER GLASS</dt>
+    <dd>Choice of orange, lemon, watermelon,
+    mango, grape, or strawberry.</dd>
+    <dt>ICED COFFEE / 10 PER GLASS</dt>
+    <dd>Mixed with milk, and served over ice
+    and topped with chocolate syrup.</dd>
+    <dt>SHAKE / 15</dt>
+    <dd>Watermelon, mango, strawberry-banana, mixed berries, or citrus.</dd>
+    </dl>
     </div>`
     //document.createElement("p").textContent="Menu");
     // main.append()
