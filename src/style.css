@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: 'Merriweather';
     src: url('./Merriweather-Regular.ttf') format('truetype');
@@ -9,8 +8,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    
+    box-sizing: border-box;    
 }
 body, html {
     background-color: lightslategrey;
@@ -30,19 +28,10 @@ body, html {
     margin: 0 10px;
     cursor: pointer;
 }
-/* #hours {
-
-    padding: 30px;
-} */
 #hours-table {
-    /* border: 2px solid black; */
-    /* border-collapse: collapse; */
     border-spacing: 60px 10px;
-    /* margin: 0 auto; */
 }
 #hours-table td {
-    /* border: 2px solid black; */
-    /* margin-right: 30px; */
     width: 100px;
     text-align: center;
 }
@@ -68,41 +57,32 @@ color: white;
     background-color: blue;
 }
 #home-div, #contact-div, #menu-div {
-    /* display: flex; */
     flex-direction: column;
     align-items: center;
     padding: 5px;
-    /* border: solid black 2px; */
     justify-content: space-evenly;
 }
  #contact-div > div {
 border: solid lightgrey 1px;
-/* margin: 20px;  */
 padding: 20px;
 background-color: white;
 } 
 #home-div  div {
     border: solid lightgray 1px;
-    /* margin-top: 20px;
-    margin-bottom: 20px; */
     background-color: white;
     padding: 20px;
 }
 #menu-div > div {
     border: solid lightgrey 1px;
-    margin: 20px;
-    padding: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     background-color: white;
 }
-.menu-section p {
-/* margin-top: 30px; */
-}
+
 .menu-title {
     text-align: center;
 }
-.menu-section {
-    /* padding-bottom: 20px; */
-}
+
 #testimonial {
     margin-bottom: 20px;
 }
