@@ -1,5 +1,10 @@
 
-
+@font-face {
+    font-family: 'Merriweather';
+    src: url('./Merriweather-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
 
 * {
     margin: 0;
@@ -9,7 +14,7 @@
 }
 body, html {
     background-color: lightslategrey;
-    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Merriweather', serif;
 }
 #content {
     display: flex;
