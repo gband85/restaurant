@@ -7,6 +7,12 @@ const contactTab = () => {
     const contactDiv = document.createElement("div");
     contactDiv.id="contact-div";    
     
+    const title=document.createElement("div");
+    title.className="title"
+    const titleText=document.createElement("h1");
+    titleText.textContent="Contact";
+    title.appendChild(titleText);
+
     const contact1=document.createElement("div");
     const contact1Text = document.createElement("p");
     contact1Text.innerHTML="Donald Westinghouse, Owner<br>Phone: 955-867-5309<br>dwestinghouse@restaurantmail.com"
@@ -23,6 +29,7 @@ const contact3Text = document.createElement("p");
     contact3.appendChild(contact3Text);
 
     //add to content div
+    contactDiv.appendChild(title);
     contactDiv.appendChild(contact1);
     contactDiv.appendChild(contact2);
     contactDiv.appendChild(contact3);

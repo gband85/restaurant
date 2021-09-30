@@ -7,12 +7,10 @@ const menuTab = () => {
     const menuDiv = document.createElement("div");
     menuDiv.id = "menu-div";
 
-    // //main section
-    // const main = document.createElement("div");
-    // main.id = "main";
-    const element=document.createElement("dl")
-    menuDiv.append()
     menuDiv.innerHTML = `
+    <div class="title">
+    <h1>Menu</h1>
+    </div>
     <div class="menu-section">
     <p class="menu-title">BURGERS</p>
     <dl>
@@ -76,9 +74,7 @@ const menuTab = () => {
     //document.createElement("p").textContent="Menu");
     // main.append()
 
-    //footer
-    const footer = document.createElement("footer");
-    footer.id = "footer";
+
     //add to content div
     //menuDiv.appendChild(header);
     //menuDiv.appendChild(main);

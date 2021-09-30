@@ -58,7 +58,7 @@ color: white;
     align-items: flex-end;
     justify-content: center;
     height: 60px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     color: white;
 }
 #navbar ul {
@@ -77,13 +77,14 @@ color: white;
 }
  #contact-div > div {
 border: solid lightgrey 1px;
-margin: 20px; 
+/* margin: 20px;  */
 padding: 20px;
 background-color: white;
 } 
 #home-div  div {
     border: solid lightgray 1px;
-    margin: 20px;
+    /* margin-top: 20px;
+    margin-bottom: 20px; */
     background-color: white;
     padding: 20px;
 }
@@ -102,12 +103,12 @@ background-color: white;
 .menu-section {
     /* padding-bottom: 20px; */
 }
- /* #testimonial {
-    border: solid black 2px;
+#testimonial {
+    margin-bottom: 20px;
 }
 #hours {
-    border: solid black 2px;
-}*/
+    margin-bottom: 20px;
+}
 #location {
     text-align: center;
 } 
@@ -123,4 +124,9 @@ dd {
 #contact-div p {
     margin-top: 20px;
     margin-bottom: 20px;
+}
+.title {
+    text-align: center;
+    background-color: white;
+    margin-bottom: 30px;
 }

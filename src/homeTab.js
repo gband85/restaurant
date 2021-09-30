@@ -7,6 +7,11 @@ const homeTab = () => {
     //create div
     const homeDiv = document.createElement("div");
     homeDiv.id="home-div";
+    const title=document.createElement("div");
+    title.className="title"
+    const titleText=document.createElement("h1");
+    titleText.textContent="Riverside Restaurant";
+    title.appendChild(titleText);
     //add testimonial
     const testimonial = document.createElement("div");
     testimonial.id="testimonial";
@@ -34,6 +39,7 @@ const homeTab = () => {
     const address = document.createElement("p");
     address.innerHTML="19125 First Street<br>North City, NE 27386";
     location.appendChild(address);
+    homeDiv.appendChild(title);
     //add to content div
     homeDiv.appendChild(testimonial);
     homeDiv.appendChild(hours);
