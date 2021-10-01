@@ -4,7 +4,6 @@
     font-weight: 400;
     font-style: normal;
   }
-
 * {
     margin: 0;
     padding: 0;
@@ -13,33 +12,6 @@
 body, html {
     background-color: lightslategrey;
     font-family: 'Merriweather', serif;
-}
-#content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-#navbar ul li {
-    display: inline-block;
-    padding: 10px 30px;
-    border-top: 3px solid white;
-    border-left: 3px solid white;
-    border-right: 3px solid white;
-    margin: 0 10px;
-    cursor: pointer;
-}
-#hours-table {
-    border-spacing: 60px 10px;
-}
-#hours-table td {
-    width: 100px;
-    text-align: center;
-}
-#navbar ul li a {
-    text-decoration: none;
-}
-#navbar ul li a:visited {
-color: white;
 }
 #header {
     background-color: black;
@@ -53,8 +25,29 @@ color: white;
 #navbar ul {
     list-style: none;
 }
+#navbar ul li {
+    display: inline-block;
+    padding: 10px 30px;
+    border-top: 3px solid white;
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+    margin: 0 10px;
+    cursor: pointer;
+}
+#navbar ul li a {
+    text-decoration: none;
+    font-size: large;
+}
+#navbar ul li a:visited {
+color: white;
+}
 .selected {
     background-color: blue;
+}
+#content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #home-div, #contact-div, #menu-div {
     flex-direction: column;
@@ -62,38 +55,35 @@ color: white;
     padding: 5px;
     justify-content: space-evenly;
 }
- #contact-div > div {
-border: solid lightgrey 1px;
-padding: 20px;
-background-color: white;
-} 
-#home-div  div {
-    border: solid lightgray 1px;
+#content div div {
     background-color: white;
+    border: solid black 1px;
     padding: 20px;
+    margin-bottom: 20px;
 }
-#menu-div > div {
-    border: solid lightgrey 1px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color: white;
-}
-
-.menu-title {
+.title {
     text-align: center;
+    margin-bottom: 50px;
 }
-
-#testimonial {
-    margin-bottom: 20px;
+#hours-table {
+    border-spacing: 60px 10px;
 }
-#hours {
-    margin-bottom: 20px;
+#hours-table td {
+    width: 100px;
+    text-align: center;
 }
 #location {
     text-align: center;
-} 
-#navbar a {
-    font-size: large;
+}
+#contact-div p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.menu-section p {
+padding: 20px;
+}
+.menu-title {
+    text-align: center;
 }
 dt {
     margin-top: 20px;
@@ -101,12 +91,5 @@ dt {
 dd {
     margin-top: 10px;
 }
-#contact-div p {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-.title {
-    text-align: center;
-    background-color: white;
-    margin-bottom: 30px;
-}
+
+
