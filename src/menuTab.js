@@ -2,8 +2,7 @@ const menuTab = () => {
     document.querySelector("#home").classList.remove("selected");
     document.querySelector("#contact").classList.remove("selected");
     document.querySelector("#menu").classList.add("selected");
-    const content = document.querySelector("#content");
-    content.innerHTML = "";
+    main.innerHTML = "";
     const menuDiv = document.createElement("div");
     menuDiv.id = "menu-div";
 
@@ -72,7 +71,8 @@ const menuTab = () => {
     </dl>
     </div>`
 
-    content.appendChild(menuDiv);
+    main.appendChild(menuDiv);
+    content.appendChild(main);
 }
 
 export { menuTab }

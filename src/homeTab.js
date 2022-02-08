@@ -2,8 +2,7 @@ const homeTab = () => {
     document.querySelector("#home").classList.add("selected");
     document.querySelector("#contact").classList.remove("selected");
     document.querySelector("#menu").classList.remove("selected");
-    const content = document.querySelector("#content");
-    content.innerHTML="";
+    main.innerHTML="";
     //create div
     const homeDiv = document.createElement("div");
     homeDiv.id="home-div";
@@ -44,7 +43,8 @@ const homeTab = () => {
     homeDiv.appendChild(testimonial);
     homeDiv.appendChild(hours);
     homeDiv.appendChild(location);
-content.appendChild(homeDiv);
+main.appendChild(homeDiv);
+content.appendChild(main);
 }
 
 export { homeTab }

@@ -2,8 +2,7 @@ const contactTab = () => {
     document.querySelector("#home").classList.remove("selected");
     document.querySelector("#contact").classList.add("selected");
     document.querySelector("#menu").classList.remove("selected");
-    const content = document.querySelector("#content");
-    content.innerHTML="";
+   main.innerHTML="";
     const contactDiv = document.createElement("div");
     contactDiv.id="contact-div";    
     
@@ -36,7 +35,8 @@ const contact3Text = document.createElement("p");
     contactDiv.appendChild(contact1);
     contactDiv.appendChild(contact2);
     contactDiv.appendChild(contact3);
-    content.appendChild(contactDiv);
+    main.appendChild(contactDiv);
+    content.appendChild(main);
 }
 
 export { contactTab }
