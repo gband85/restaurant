@@ -7,10 +7,10 @@ const menuTab = () => {
     menuDiv.id = "menu-div";
 
     menuDiv.innerHTML = `
-    <div class="title">
+    <section class="title">
     <h1>Menu</h1>
-    </div>
-    <div class="menu-section">
+    </section>
+    <section class="menu-section">
     <p class="menu-title">BURGERS</p>
     <dl>
     <dt>CLASSIC / 25</dt>
@@ -26,8 +26,8 @@ const menuTab = () => {
     between potato buns. Can you handle
     this?</dd>
     </dl>
-    </div>
-    <div class="menu-section">
+    </section>
+    <section class="menu-section">
     <p class="menu-title">RICE MEALS</p>
     <dl>
     <dt>PORK STEAK / 20</dt>
@@ -41,8 +41,8 @@ const menuTab = () => {
     with mashed potatoes and mixed
     vegetables.</dd>
     </dl>
-    </div>
-    <div class="menu-section">
+    </section>
+    <section class="menu-section">
     <p  class="menu-title">SANDWICHES</p>
     <dl>
     <dt>VEGAN PANINI / 15</dt>
@@ -56,8 +56,8 @@ const menuTab = () => {
     grilled sandwich slathered with
     butter.</dd>
     </dl>
-    </div>
-    <div class="menu-section">
+    </section>
+    <section class="menu-section">
     <p class="menu-title">DRINKS</p>
     <dl>
     <dt>JUICE / 5 PER GLASS</dt>
@@ -69,7 +69,7 @@ const menuTab = () => {
     <dt>SHAKE / 15</dt>
     <dd>Watermelon, mango, strawberry-banana, mixed berries, or citrus.</dd>
     </dl>
-    </div>`
+    </section>`
 
     main.appendChild(menuDiv);
     content.appendChild(main);

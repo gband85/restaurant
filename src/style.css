@@ -53,7 +53,7 @@ color: white;
     padding: 5px;
     justify-content: space-evenly;
 }
-#content div div {
+#content div section {
     background-color: white;
     border: solid black 1px;
     padding: 20px;

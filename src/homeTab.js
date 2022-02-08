@@ -6,19 +6,19 @@ const homeTab = () => {
     //create div
     const homeDiv = document.createElement("div");
     homeDiv.id="home-div";
-    const title=document.createElement("div");
+    const title=document.createElement("section");
     title.className="title"
     const titleText=document.createElement("h1");
     titleText.textContent="Riverside Restaurant";
     title.appendChild(titleText);
     //add testimonial
-    const testimonial = document.createElement("div");
+    const testimonial = document.createElement("section");
     testimonial.id="testimonial";
     const text = document.createElement("p");
     text.innerHTML="Best place I've ever eaten at!<br>-John Smith";
     testimonial.appendChild(text);
     //add hours
-    const hours = document.createElement("div");
+    const hours = document.createElement("section");
     hours.id="hours";
     const hoursTable = document.createElement("table");
     hoursTable.id="hours-table";
@@ -33,7 +33,7 @@ const homeTab = () => {
     </tbody>`
    hours.appendChild(hoursTable);
 //add address
-    const location = document.createElement("div");
+    const location = document.createElement("section");
     location.id="location";
     const address = document.createElement("p");
     address.innerHTML="19125 First Street<br>North City, NE 27386";
