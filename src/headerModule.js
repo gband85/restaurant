@@ -1,3 +1,5 @@
+import { contactTab } from "./contactTab";
+
 const headerModule = () => {
     //create header
     const header = document.createElement("header");
@@ -32,8 +34,8 @@ const headerModule = () => {
     menu.appendChild(menuLink);
     
     navList.appendChild(home);
-    navList.appendChild(contact);
     navList.appendChild(menu);
+    navList.appendChild(contact);
     nav.appendChild(navList);
     header.appendChild(nav);
     content.appendChild(header);
