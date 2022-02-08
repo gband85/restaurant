@@ -36,7 +36,7 @@ const headerModule = () => {
     navList.appendChild(menu);
     nav.appendChild(navList);
     header.appendChild(nav);
-    document.body.prepend(header);
+    content.appendChild(header);
 }
 
 export { headerModule }
