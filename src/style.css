@@ -45,9 +45,7 @@ color: white;
     background-color: blue;
 }
 #content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
 }
 #home-div, #contact-div, #menu-div {
     flex-direction: column;
