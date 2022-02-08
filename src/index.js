@@ -7,6 +7,9 @@ import './style.css';
 
  //window.onload=function() {
    // homeTab();
+   global.content = document.querySelector("#content");
+  global.main = document.createElement("main");
+
    headerModule();
    homeTab();
 // }

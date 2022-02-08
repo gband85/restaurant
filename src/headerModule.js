@@ -30,11 +30,11 @@ const headerModule = () => {
     menuLink.textContent = "Menu";
     menuLink.id="menu-link";
     menu.appendChild(menuLink);
-
-    nav.appendChild(navList);
+    
     navList.appendChild(home);
     navList.appendChild(contact);
     navList.appendChild(menu);
+    nav.appendChild(navList);
     header.appendChild(nav);
     document.body.prepend(header);
 }
