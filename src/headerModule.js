@@ -48,6 +48,7 @@ const headerModule = () => {
     navList.appendChild(menu);
     navList.appendChild(contact);
     navbar.appendChild(navList);
+    navbar.style.display="none";
     header.appendChild(mobileNav);
     header.appendChild(navbar);
     content.appendChild(header);

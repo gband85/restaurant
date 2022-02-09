@@ -25,18 +25,27 @@ const homeTab = () => {
     //add hours
     const hours = document.createElement("section");
     hours.id="hours";
-    const hoursTable = document.createElement("table");
-    hoursTable.id="hours-table";
-    hoursTable.innerHTML=`<thead><tr><th colspan="2">Hours</th></tr></thead><tbody>
-    <tr><td>Sunday</td><td>12-5PM</td></tr>
-    <tr><td>Monday</td><td>8AM-8PM</td></tr>
-    <tr><td>Tuesday</td><td>8AM-8PM</td></tr>
-    <tr><td>Wednesday</td><td>8AM-8PM</td></tr>
-    <tr><td>Thursday</td><td>8AM-8PM</td></tr>
-    <tr><td>Friday</td><td>8AM-8PM</td></tr> 
-    <tr><td>Saturday</td><td>12-5PM</td></tr> 
-    </tbody>`
-   hours.appendChild(hoursTable);
+    hours.innerHTML=
+    `
+    <div class="days">
+    <p>Sunday</p>
+    <p>Monday</p>
+    <p>Tuesday</p>
+    <p>Wednesday</p>
+    <p>Thursday</p>
+    <p>Friday</p> 
+    <p>Saturday</p>
+</div>
+<div class="times">
+    <p>12-5PM</p>
+    <p>8AM-8PM</p>
+    <p>8AM-8PM</p>
+    <p>8AM-8PM</p>
+    <p>8AM-8PM</p>
+    <p>8AM-8PM</p> 
+    <p>12-5PM</p>
+    </div>
+    `
 //add address
     const location = document.createElement("section");
     location.id="location";
