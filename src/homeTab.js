@@ -4,13 +4,18 @@ const homeTab = () => {
     document.querySelector("#menu").classList.remove("selected");
     main.innerHTML="";
     //create div
-    const homeDiv = document.createElement("div");
-    homeDiv.id="home-div";
-    const title=document.createElement("section");
-    title.className="title"
+
+    const hero=document.createElement("section");
+    hero.className="hero";
     const titleText=document.createElement("h1");
     titleText.textContent="Riverside Restaurant";
-    title.appendChild(titleText);
+    hero.appendChild(titleText);
+    //add testimonial
+    // const image = document.createElement("img");
+    // image.src="pexels-kaboompics-com-6267(3).jpg";
+    // image.style.display=""
+
+
     //add testimonial
     const testimonial = document.createElement("section");
     testimonial.id="testimonial";
@@ -38,12 +43,14 @@ const homeTab = () => {
     const address = document.createElement("p");
     address.innerHTML="19125 First Street<br>North City, NE 27386";
     location.appendChild(address);
-    homeDiv.appendChild(title);
+    main.appendChild(hero);
+    const container = document.createElement("div");
+    container.className="container";
     //add to content div
-    homeDiv.appendChild(testimonial);
-    homeDiv.appendChild(hours);
-    homeDiv.appendChild(location);
-main.appendChild(homeDiv);
+    container.appendChild(testimonial);
+    container.appendChild(hours);
+    container.appendChild(location);
+main.appendChild(container);
 content.appendChild(main);
 }
 

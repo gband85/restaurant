@@ -13,27 +13,48 @@ body, html {
     background-color: lightslategrey;
     font-family: 'Merriweather', serif;
 }
-#header {
+#content {
+
+}
+header {
     background-color: black;
-    display: flex;
+    /* display: flex; */
     align-items: flex-end;
     justify-content: center;
-    height: 60px;
+    /* height: 60px; */
     margin-bottom: 30px;
     color: white;
+    width: 100%;
+    position: relative;
 }
+.mobile-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* min-width: 360px; */
+    padding: 10px;
+    align-items: center;
+  }
+  #navbar {
+    /* margin-top: 10px; */
+    /* position: relative; */
+    z-index: 5;
+    background-color: black;
+    padding: 0 10px 10px;
+    /* display: none; */
+  }
 #navbar ul {
     list-style: none;
 }
 #navbar ul li {
-    display: inline-block;
+    /* display: inline-block; */
     padding: 10px 30px;
-    border-top: 3px solid white;
-    border-left: 3px solid white;
-    border-right: 3px solid white;
     margin: 0 10px;
     cursor: pointer;
 }
+#navbar ul li:first-child {
+    margin-top: 0;
+  }
 #navbar ul li a {
     text-decoration: none;
     font-size: large;
@@ -44,21 +65,36 @@ color: white;
 .selected {
     background-color: blue;
 }
-#content {
-
-}
-#home-div, #contact-div, #menu-div {
-    flex-direction: column;
-    align-items: center;
-    padding: 5px;
-    justify-content: space-evenly;
-}
-#content div section {
+main {
     background-color: white;
-    border: solid black 1px;
-    padding: 20px;
-    margin-bottom: 20px;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .container {
+    padding: 0 30px 30px;
+    margin-top: 50px;
+}  
+section {
+  /* background-color: white; */
+  margin-top: 50px;
+  justify-content: center;
+  column-gap: 30px;
 }
+section:first-child {
+    margin-top: 0;
+  }
+  .hero {
+    background: url(./pexels-kaboompics-com-6267.jpg) no-repeat center
+      center/cover;
+    height: 96vh;
+    /* margin-bottom: 50px; */
+    margin: 0 0;
+    padding: 0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0;
+  }
 .title {
     text-align: center;
     margin-bottom: 50px;

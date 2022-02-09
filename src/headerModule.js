@@ -5,8 +5,19 @@ const headerModule = () => {
     const header = document.createElement("header");
     header.id = "header";
     //navbar
-    const nav = document.createElement("nav");
-    nav.id = "navbar";
+    const mobileNav = document.createElement("div");
+    mobileNav.className="mobile-nav";
+    const logo=document.createElement("h1");
+    logo.className="logo";
+    logo.textContent="RSR";
+    mobileNav.appendChild(logo);
+        const hamburger=document.createElement("i");
+        hamburger.id="hamburger";
+    hamburger.classList.add("fa","fa-bars");
+    mobileNav.appendChild(hamburger);
+
+    const navbar = document.createElement("nav");
+    navbar.id = "navbar";
     const navList = document.createElement("ul");
 
     const home = document.createElement("li");
@@ -36,8 +47,9 @@ const headerModule = () => {
     navList.appendChild(home);
     navList.appendChild(menu);
     navList.appendChild(contact);
-    nav.appendChild(navList);
-    header.appendChild(nav);
+    navbar.appendChild(navList);
+    header.appendChild(mobileNav);
+    header.appendChild(navbar);
     content.appendChild(header);
 }
 
