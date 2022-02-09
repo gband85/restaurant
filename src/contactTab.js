@@ -3,9 +3,6 @@ const contactTab = () => {
     document.querySelector("#contact").classList.add("selected");
     document.querySelector("#menu").classList.remove("selected");
    main.innerHTML="";
-    const contactDiv = document.createElement("div");
-    contactDiv.id="contact-div";    
-    
     const title=document.createElement("section");
     title.className="title"
     const titleText=document.createElement("h1");
@@ -29,13 +26,14 @@ const contactTab = () => {
 const contact3Text = document.createElement("p");
     contact3Text.innerHTML="John Abel, Assistant Manager<br>Phone: 955-867-5309<br>jabel@restaurantmail.com"
     contact3.appendChild(contact3Text);
-
+    const container = document.createElement("div");
+container.className="container";
     //add to content div
-    contactDiv.appendChild(title);
-    contactDiv.appendChild(contact1);
-    contactDiv.appendChild(contact2);
-    contactDiv.appendChild(contact3);
-    main.appendChild(contactDiv);
+    container.appendChild(title);
+    container.appendChild(contact1);
+    container.appendChild(contact2);
+    container.appendChild(contact3);
+    main.appendChild(container);
     content.appendChild(main);
 }
 
