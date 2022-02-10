@@ -3,12 +3,22 @@ import { contactTab } from "./contactTab";
 const headerModule = () => {
     //create header
     const header = document.createElement("header");
-    header.id = "header";
+   // header.id = "header";
     //navbar
      const navbar = document.createElement("nav");
-    navbar.id = "navbar";
+    navbar.className = "navbar";
+
+    const logo=document.createElement("a");
+    logo.className="logo";
+    // logo.textContent="RSR";
+    logo.href="#"
+    const image=document.createElement("img");
+    image.src="../src/riverside.jpg";
+    image.style.width="110px";
+    logo.appendChild(image)
+
     const navList = document.createElement("ul");
-navList.id="nav-list"
+navList.className="nav-list"
     
 const home = document.createElement("li");
     home.id="home";
@@ -16,7 +26,7 @@ const home = document.createElement("li");
     const homeLink = document.createElement("a");
     homeLink.href = "#";
     homeLink.textContent = "Home";    
-    homeLink.id="home-link";
+    homeLink.className="link";
     home.appendChild(homeLink);
 
     const menu = document.createElement("li");
@@ -25,7 +35,7 @@ const home = document.createElement("li");
     const menuLink = document.createElement("a");
     menuLink.href = "#";
     menuLink.textContent = "Menu";
-    menuLink.id="menu-link";
+    menuLink.className="link";
     menu.appendChild(menuLink);
 
 
@@ -36,7 +46,7 @@ const home = document.createElement("li");
     const reviewsLink = document.createElement("a");
     reviewsLink.href = "#";
     reviewsLink.textContent = "Reviews";
-    reviewsLink.id="reviews-link";
+    reviewsLink.className="link";
     reviews.appendChild(reviewsLink);
 
     const photos = document.createElement("li");
@@ -45,7 +55,7 @@ const home = document.createElement("li");
     const photosLink = document.createElement("a");
     photosLink.href = "#";
     photosLink.textContent = "Photos";
-    photosLink.id="photos-link";
+    photosLink.className="link";
     photos.appendChild(photosLink);
 
 
@@ -55,7 +65,7 @@ const home = document.createElement("li");
     const contactLink = document.createElement("a");
     contactLink.href = "#";
     contactLink.textContent = "Contact";
-    contactLink.id="contact-link";
+    contactLink.className="link";
     contact.appendChild(contactLink);
 
     
@@ -64,18 +74,11 @@ const home = document.createElement("li");
     navList.appendChild(reviews)
     navList.appendChild(photos)
     navList.appendChild(contact);
-    const logo=document.createElement("a");
-    logo.className="logo";
-    // logo.textContent="RSR";
-    logo.href="#"
-    const image=document.createElement("img");
-    image.src="../src/riverside.jpg";
-    image.style.width="110px";
-    logo.appendChild(image)
-//      const hamburger=document.createElement("i");
-//     hamburger.id="hamburger";
-// hamburger.classList.add("fa","fa-bars");   
+     const hamburger=document.createElement("i");
+    hamburger.id="hamburger";
+hamburger.classList.add("fa","fa-bars");   
  navbar.appendChild(logo);
+// navbar.appendChild(hamburger);
      navbar.appendChild(navList);
     header.appendChild(navbar);
     content.appendChild(header);

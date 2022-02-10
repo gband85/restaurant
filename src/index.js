@@ -32,10 +32,11 @@ const navList=document.getElementById("nav-list");
 document.querySelector("#home").addEventListener("click", function() {
    homeTab();
 });
-document.querySelector("#contact").addEventListener("click", function() {
-    contactTab();
-});
 document.querySelector("#menu").addEventListener("click", function() {
     menuTab();
 });
+document.querySelector("#contact").addEventListener("click", function() {
+    contactTab();
+});
+
 

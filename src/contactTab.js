@@ -1,7 +1,8 @@
 const contactTab = () => {
-    document.querySelector("#home").classList.remove("selected");
+    document.querySelector(".nav-list li").classList.remove("selected");
+   // document.querySelector("#menu").classList.remove("selected");
     document.querySelector("#contact").classList.add("selected");
-    document.querySelector("#menu").classList.remove("selected");
+    
    main.innerHTML="";
     const title=document.createElement("section");
     title.className="title"
