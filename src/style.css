@@ -19,19 +19,26 @@ body, html {
 header {
     align-items: flex-end;
     justify-content: center;
-    margin-top: 2em;
+    /* margin-top: 2em; */
 }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
   .logo {
     /* align-self: center; */
     width: 110px;
+
   }
+   .nav {
+  display: flex;
+  flex-direction: column;
+  /* justify-self: flex-end; */
+} 
   #hamburger {
-    font-size: 32px;
+    /* font-size: 32px; */
     cursor: pointer;
     align-self: flex-end;
-  }
-  .navbar {
-    display: flex;
   }
 .nav-list {
     list-style: none;
@@ -39,26 +46,23 @@ header {
     flex-direction: column;
     align-items: flex-end;
 }
-.navbar ul li:first-child {
+.nav-list li:first-child {
     margin-top: 0;
   }
-.navbar ul a {
+.nav-list a {
   display: block;
     text-decoration: none;
     font-size: large;
     text-align: center;
 }
-.navbar ul li a:visited {
+.nav-list li a:visited {
 color: black;
 }
 .nav-list a {
 display: block;
 padding: .4em;
 }
-.nav {
-  display: flex;
-  flex-direction: column;
-}
+
 .selected {
     /* background-color: blue; */
     /* border-bottom: 1px black solid; */
