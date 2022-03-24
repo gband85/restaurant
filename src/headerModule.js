@@ -64,19 +64,24 @@ const home = document.createElement("li");
     contactLink.className="link";
     contact.appendChild(contactLink);
 
-    
+      const hamburger=document.createElement("i");
+    hamburger.id="hamburger";
+hamburger.classList.add("fa","fa-bars");    
+
+// navList.appendChild(hamburger)
     navList.appendChild(home);
     navList.appendChild(menu);
     navList.appendChild(reviews)
     navList.appendChild(photos)
     navList.appendChild(contact);
-     const hamburger=document.createElement("i");
-    hamburger.id="hamburger";
-hamburger.classList.add("fa","fa-bars");   
- navbar.appendChild(logo);
 
-     navbar.appendChild(navList);
-     navbar.appendChild(hamburger);
+const nav=document.createElement("div");
+nav.className="nav"
+nav.appendChild(hamburger);    
+  nav.appendChild(navList);
+ navbar.appendChild(logo);
+navbar.appendChild(nav);
+         
     header.appendChild(navbar);
     content.appendChild(header);
 }
