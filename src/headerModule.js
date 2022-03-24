@@ -74,8 +74,9 @@ const home = document.createElement("li");
     hamburger.id="hamburger";
 hamburger.classList.add("fa","fa-bars");   
  navbar.appendChild(logo);
-// navbar.appendChild(hamburger);
+
      navbar.appendChild(navList);
+     navbar.appendChild(hamburger);
     header.appendChild(navbar);
     content.appendChild(header);
 }
