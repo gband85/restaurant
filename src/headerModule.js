@@ -13,8 +13,9 @@ const headerModule = () => {
     logo.textContent="RSR";
     logo.href="#"
 
-    const navList = document.createElement("ul");
-navList.className="nav-list"
+    global.navList = document.createElement("ul");
+    navList=global.navList;
+navList.className="nav-list";
     
 const home = document.createElement("li");
     home.id="home";

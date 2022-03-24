@@ -13,21 +13,17 @@ import './style.css';
    headerModule();
    homeTab();
 // }
-const navbar=document.getElementById("navbar");
-const navList=document.getElementById("nav-list");
-// document.getElementById("hamburger").addEventListener("click",function() {
-//    if (navList.style.display=="none") {
-//        navList.style.display="flex";
-      
-//     //    navbar.style.flexWrap="wrap"
-//    }
-//    else if (navList.style.display=='') {
-//        navList.style.display="none";
-//    }
-//    else {
-//        navList.style.display="none";
-//    }
-//    })
+// const navbar=document.getElementById("navbar");
+// const navList=document.getElementById("nav-list");
+navList.style.display="none";
+document.getElementById("hamburger").addEventListener("click",function() {
+   if (navList.style.display=="none") {
+       navList.style.display="flex";
+   }
+   else {
+       navList.style.display="none";
+   }
+   })
 
 document.querySelector("#home").addEventListener("click", function() {
    homeTab();
