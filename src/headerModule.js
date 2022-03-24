@@ -3,7 +3,7 @@ import { contactTab } from "./contactTab";
 const headerModule = () => {
     //create header
     const header = document.createElement("header");
-   // header.id = "header";
+   header.id = "header";
     //navbar
      const navbar = document.createElement("nav");
     navbar.className = "navbar";
