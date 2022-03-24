@@ -10,12 +10,8 @@ const headerModule = () => {
 
     const logo=document.createElement("a");
     logo.className="logo";
-    // logo.textContent="RSR";
+    logo.textContent="RSR";
     logo.href="#"
-    const image=document.createElement("img");
-    image.src="../src/riverside.jpg";
-    image.style.width="110px";
-    logo.appendChild(image)
 
     const navList = document.createElement("ul");
 navList.className="nav-list"
