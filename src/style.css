@@ -28,7 +28,9 @@ header {
   .logo {
     /* align-self: center; */
     width: 110px;
-
+font-size: 26px;
+text-decoration: none;
+color: black;
   }
    .nav {
   display: flex;
@@ -36,13 +38,13 @@ header {
   /* justify-self: flex-end; */
 } 
   #hamburger {
-    /* font-size: 32px; */
+    font-size: 28px;
     cursor: pointer;
     align-self: flex-end;
   }
 .nav-list {
     list-style: none;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: flex-end;
 }
