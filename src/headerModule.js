@@ -14,7 +14,7 @@ const headerModule = () => {
     logo.href="#"
 
     global.navList = document.createElement("ul");
-    navList=global.navList;
+    // navList=global.navList;
 navList.className="nav-list";
     
 const home = document.createElement("li");
@@ -65,7 +65,7 @@ const home = document.createElement("li");
     contactLink.className="link";
     contact.appendChild(contactLink);
 
-      const hamburger=document.createElement("i");
+      global.hamburger=document.createElement("i");
     hamburger.id="hamburger";
 hamburger.classList.add("fa","fa-bars");    
 
