@@ -78,11 +78,12 @@ hamburger.classList.add("fa","fa-bars");
 
 const nav=document.createElement("div");
 nav.className="nav"
-nav.appendChild(hamburger);    
-  nav.appendChild(navList);
- navbar.appendChild(logo);
-navbar.appendChild(nav);
-         
+
+  
+//  navbar.appendChild(logo);
+navbar.appendChild(logo);
+navbar.appendChild(navList);
+         navbar.appendChild(hamburger);    
     header.appendChild(navbar);
     content.appendChild(header);
 }
