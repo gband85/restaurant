@@ -48,27 +48,27 @@ navList.style.display="flex";
 
 document.querySelector("#home").addEventListener("click", function() {
    homeTab();
-//    if (hamburger.style.display="block") {
-//        navList.style.display="none"
-//    }
+   if (hamburger.style.display="block") {
+       navList.style.display="none"
+   }
 });
 document.querySelector("#menu").addEventListener("click", function() {
     menuTab();
-    // if (hamburger.style.display="block") {
-    //     navList.style.display="none"
-    // }
+    if (hamburger.style.display="block") {
+        navList.style.display="none"
+    }
 });
 document.querySelector("#reviews").addEventListener("click", function() {
    reviewsTab();
-    // if (hamburger.style.display="block") {
-    //     navList.style.display="none"
-    // }
+    if (hamburger.style.display="block") {
+        navList.style.display="none"
+    }
 });
 document.querySelector("#contact").addEventListener("click", function() {
     contactTab();
-    // if (hamburger.style.display="block") {
-    //     navList.style.display="none"
-    // }
+    if (hamburger.style.display="block") {
+        navList.style.display="none"
+    }
 });
 
 
