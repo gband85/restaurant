@@ -2,6 +2,7 @@ import { homeTab } from './homeTab';
 import { menuTab } from './menuTab';
 import { contactTab } from './contactTab';
 import { headerModule } from './headerModule';
+import { reviewsTab } from './reviewsTab';
 import './style.css';
 
 
