@@ -58,6 +58,12 @@ document.querySelector("#menu").addEventListener("click", function() {
     //     navList.style.display="none"
     // }
 });
+document.querySelector("#reviews").addEventListener("click", function() {
+   reviewsTab();
+    // if (hamburger.style.display="block") {
+    //     navList.style.display="none"
+    // }
+});
 document.querySelector("#contact").addEventListener("click", function() {
     contactTab();
     // if (hamburger.style.display="block") {
