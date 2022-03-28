@@ -3,6 +3,7 @@ import { menuTab } from './menuTab';
 import { contactTab } from './contactTab';
 import { headerModule } from './headerModule';
 import { reviewsTab } from './reviewsTab';
+import { photosTab } from './photosTab';
 import './style.css';
 
 
