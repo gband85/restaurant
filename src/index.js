@@ -65,6 +65,12 @@ document.querySelector("#reviews").addEventListener("click", function() {
     navList.style.display="none"
 }
 });
+document.querySelector("#photos").addEventListener("click", function() {
+    photosTab();
+    if (window.innerWidth<600) {
+     navList.style.display="none"
+ }
+ });
 document.querySelector("#contact").addEventListener("click", function() {
     contactTab();
     if (window.innerWidth<600) {
