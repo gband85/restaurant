@@ -1,5 +1,5 @@
 const photosTab = () => {
-    main.innerHTML = "";
+    // main.innerHTML = "";
     const title=document.createElement("section");
     title.className="title";
     const titleText=document.createElement("h1");
@@ -26,8 +26,7 @@ const photosTab = () => {
     container.className="container";
     container.appendChild(title);
     container.appendChild(photosSection);
-        main.appendChild(container)
-        content.appendChild(main);
+        content.appendChild(container);
 }
 
 export { photosTab }

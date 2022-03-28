@@ -4,7 +4,7 @@ const reviewsTab = () => {
     }); 
     document.querySelector("#reviews .link").classList.add("selected");
     
-   main.innerHTML="";
+//    main.innerHTML="";
     const title=document.createElement("section");
     title.className="title"
     const titleText=document.createElement("h1");
@@ -56,8 +56,7 @@ container.className="container";
     container.appendChild(Review4);
     container.appendChild(Review5);
 
-    main.appendChild(container);
-    content.appendChild(main);
+    content.appendChild(container);
 }
 
 export { reviewsTab }

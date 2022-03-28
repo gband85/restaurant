@@ -3,7 +3,7 @@ const contactTab = () => {
    // document.querySelector("#menu").classList.remove("selected");
     document.querySelector("#contact").classList.add("selected");
     
-   main.innerHTML="";
+//    main.innerHTML="";
     const title=document.createElement("section");
     title.className="title"
     const titleText=document.createElement("h1");
@@ -34,8 +34,8 @@ container.className="container";
     container.appendChild(contact1);
     container.appendChild(contact2);
     container.appendChild(contact3);
-    main.appendChild(container);
-    content.appendChild(main);
+   
+    content.appendChild(container);
 }
 
 export { contactTab }

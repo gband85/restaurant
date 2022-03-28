@@ -19,7 +19,7 @@ import './style.css';
        }
  }
    global.content = document.querySelector("#content");
-  global.main = document.createElement("main");
+//   global.main = document.createElement("main");
 
    headerModule();
    homeTab();

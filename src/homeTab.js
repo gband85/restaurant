@@ -2,7 +2,7 @@ const homeTab = () => {
     document.querySelector(".nav-list li").classList.remove("selected");
     //document.querySelector("#contact").classList.remove("selected");
     document.querySelector("#home").classList.add("selected");
-    main.innerHTML="";
+    // main.innerHTML="";
     //create div
 
     const hero=document.createElement("section");
@@ -52,15 +52,15 @@ const homeTab = () => {
     const address = document.createElement("p");
     address.innerHTML="19125 First Street<br>North City, NE 27386";
     location.appendChild(address);
-    main.appendChild(hero);
+    content.appendChild(hero);
     const container = document.createElement("div");
     container.className="container";
     //add to content div
     container.appendChild(testimonial);
     container.appendChild(hours);
     container.appendChild(location);
-main.appendChild(container);
-content.appendChild(main);
+
+content.appendChild(container);
 }
 
 export { homeTab }

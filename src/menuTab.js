@@ -2,7 +2,7 @@ const menuTab = () => {
     document.querySelector(".nav-list li").classList.remove("selected");
     //document.querySelector("#contact").classList.remove("selected");
     document.querySelector("#menu").classList.add("selected");
-    main.innerHTML = "";
+    // main.innerHTML = "";
     const title=document.createElement("section");
     title.className="title";
     const titleText=document.createElement("h1");
@@ -78,8 +78,8 @@ const menuTab = () => {
     container.appendChild(riceSection);
     container.appendChild(sandwichSection);
     container.appendChild(drinkSection);
-        main.appendChild(container)
-        content.appendChild(main);
+        
+        content.appendChild(container);
 }
 
 export { menuTab }
