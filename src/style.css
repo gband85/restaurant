@@ -87,13 +87,13 @@ main {
     padding: 0 30px 30px;
     margin-top: 50px;
 }  
-section {
+div {
   /* background-color: white; */
   margin-top: 50px;
   justify-content: center;
   column-gap: 30px;
 }
-section:first-child {
+div:first-child {
     margin-top: 0;
   }
   .hero {
@@ -126,14 +126,34 @@ justify-content: space-between;
 #location {
     text-align: center;
 }
-.menu-section p {
-  margin-top: 10px;
+.menu-section {
+  text-align: center;
+  margin-top: 100px;
 }
-.menu-section p:first-child {
+/* .menu-section p {
+  margin-top: 30px;
+} */
+/* .menu-section p:first-child {
   margin-top: 0;
-}
+} */
 .menu-title {
     text-align: center;
+    /* border-bottom: 2px solid black; */
+    position: relative;
+    padding-bottom: 10px;
+    /* margin-bottom: 30px; */
+}
+.menu-title:after {
+  content: "";
+  background: black;
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+  height: 2px;
+  width: 50%;
+}
+.menu-item {
+  margin-top: 30px;
 }
 #contact-div p {
   /* margin-top: 20px;
