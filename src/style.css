@@ -153,6 +153,7 @@ justify-content: space-between;
   grid-template-columns: 1fr;
   /* grid-template-rows: repeat(3,1fr); */
   /* width: fit-content; */
+  gap: 20px;
 }
 .photos img {
  /* width: 50%;
@@ -172,12 +173,6 @@ justify-content: space-between;
         flex-direction: row;
         justify-self: end;
       }
-    /* #navbar {
-        display: block;
-    } */
-    #hamburger {
-      /* display: none; */
-    }
 }
 
 @media screen and (min-width: 768px) {
