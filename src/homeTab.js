@@ -18,7 +18,7 @@ if (document.querySelector('.container')!=null) {
     hero.appendChild(titleText);
 
     //add hours
-    const hours = document.createElement("section");
+    const hours = document.createElement("div");
     hours.id="hours";
     hours.innerHTML=
     `
@@ -42,7 +42,7 @@ if (document.querySelector('.container')!=null) {
     </div>
     `
 //add address
-    const location = document.createElement("section");
+    const location = document.createElement("div");
     location.id="location";
     const address = document.createElement("p");
     address.innerHTML="19125 First Street<br>North City, NE 27386";

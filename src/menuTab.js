@@ -7,12 +7,12 @@ const menuTab = () => {
         }
         content.removeChild(document.querySelector('.container'));
     // main.innerHTML = "";
-    const title=document.createElement("section");
+    const title=document.createElement("div");
     title.className="title";
     const titleText=document.createElement("h1");
     titleText.textContent="Menu"
     title.appendChild(titleText);
-    const burgerSection = document.createElement("section");
+    const burgerSection = document.createElement("div");
     burgerSection.className="menu-section";
     burgerSection.innerHTML=`
     <p class="menu-title">BURGERS</p>
@@ -29,7 +29,7 @@ const menuTab = () => {
     between potato buns. Can you handle
     this?</p>
     `
-    const riceSection = document.createElement("section");
+    const riceSection = document.createElement("div");
     riceSection.className="menu-section";
     riceSection.innerHTML=`
         <p class="menu-title">RICE MEALS</p>
@@ -44,7 +44,7 @@ const menuTab = () => {
         with mashed potatoes and mixed
         vegetables.</p>
         `
-        const sandwichSection = document.createElement("section");
+        const sandwichSection = document.createElement("div");
         sandwichSection.className="menu-section";
         sandwichSection.innerHTML=`
         <p class="menu-title">SANDWICHES</p>
@@ -58,7 +58,7 @@ const menuTab = () => {
         <p>Swiss, chepar, and mozzarella, in a
         grilled sandwich slathered with
         butter.</p>`
-        const drinkSection = document.createElement("section");
+        const drinkSection = document.createElement("div");
         drinkSection.className="menu-section";
         drinkSection.innerHTML=`
         <p class="menu-title">DRINKS</p>

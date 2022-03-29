@@ -4,13 +4,13 @@ const photosTab = () => {
         content.removeChild(document.querySelector('.hero'));
         }
         content.removeChild(document.querySelector('.container'));
-    const title=document.createElement("section");
+    const title=document.createElement("div");
     title.className="title";
     const titleText=document.createElement("h1");
     titleText.textContent="Photos"
     title.appendChild(titleText);
     
-    const photosSection=document.createElement("section");
+    const photosSection=document.createElement("div");
     photosSection.className="photos";
     photosSection.innerHTML=`
     <img src="../src/pexels-andrea-piacquadio-821054.jpg" alt="" class="photo">
