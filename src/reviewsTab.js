@@ -3,6 +3,10 @@ const reviewsTab = () => {
          element.classList.remove("selected");
     }); 
     document.querySelector("#reviews .link").classList.add("selected");
+    if (document.querySelector('.hero')!=null) {
+        content.removeChild(document.querySelector('.hero'));
+        }
+        content.removeChild(document.querySelector('.container'));
     
 //    main.innerHTML="";
     const title=document.createElement("section");

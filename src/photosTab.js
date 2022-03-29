@@ -1,5 +1,9 @@
 const photosTab = () => {
     // main.innerHTML = "";
+    if (document.querySelector('.hero')!=null) {
+        content.removeChild(document.querySelector('.hero'));
+        }
+        content.removeChild(document.querySelector('.container'));
     const title=document.createElement("section");
     title.className="title";
     const titleText=document.createElement("h1");

@@ -2,8 +2,13 @@ const contactTab = () => {
     document.querySelector(".nav-list li").classList.remove("selected");
    // document.querySelector("#menu").classList.remove("selected");
     document.querySelector("#contact").classList.add("selected");
-    
-//    main.innerHTML="";
+    if (document.querySelector('.hero')!=null) {
+    content.removeChild(document.querySelector('.hero'));
+    }
+    content.removeChild(document.querySelector('.container'));
+    const container = document.createElement("div");
+    container.className="container";
+// container.innerHTML="";
     const title=document.createElement("section");
     title.className="title"
     const titleText=document.createElement("h1");
@@ -27,8 +32,7 @@ const contactTab = () => {
 const contact3Text = document.createElement("p");
     contact3Text.innerHTML="John Abel, Assistant Manager<br>Phone: 955-867-5309<br>jabel@restaurantmail.com"
     contact3.appendChild(contact3Text);
-    const container = document.createElement("div");
-container.className="container";
+
     //add to content div
     container.appendChild(title);
     container.appendChild(contact1);
