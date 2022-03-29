@@ -17,12 +17,6 @@ if (document.querySelector('.container')!=null) {
     titleText.textContent="Riverside Restaurant";
     hero.appendChild(titleText);
 
-    //add testimonial
-    const testimonial = document.createElement("section");
-    testimonial.id="testimonial";
-    const text = document.createElement("p");
-    text.innerHTML="Best place I've ever eaten at!<br>-John Smith";
-    testimonial.appendChild(text);
     //add hours
     const hours = document.createElement("section");
     hours.id="hours";
