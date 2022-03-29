@@ -51,7 +51,6 @@ if (document.querySelector('.container')!=null) {
     const container = document.createElement("div");
     container.className="container";
     //add to content div
-    container.appendChild(testimonial);
     container.appendChild(hours);
     container.appendChild(location);
 
