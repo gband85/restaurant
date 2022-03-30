@@ -16,7 +16,9 @@ window.onload = function () {
     navList.style.display = "none";
   }
 };
-global.content = document.querySelector("#content");
+global.content = document.createElement("div");
+content.id="content";
+document.body.appendChild(content);
 //   global.main = document.createElement("main");
 
 headerModule();
