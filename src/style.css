@@ -174,6 +174,13 @@ justify-content: space-between;
 .menu-item {
   margin-top: 30px;
 }
+.review p:first-child {
+  text-align: left;
+  /* margin-bottom: 20px; */
+}
+.review p:last-child {
+  text-align: right;
+}
 #contact-div p {
   /* margin-top: 20px;
   margin-bottom: 20px; */
