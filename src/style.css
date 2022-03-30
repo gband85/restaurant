@@ -99,9 +99,10 @@ div:first-child {
     margin-top: 0;
   }
   .hero {
-    background: url(./pexels-kaboompics-com-6267.jpg) no-repeat center
+         background: url(./pexels-kaboompics-com-6267.jpg) no-repeat center
       center/cover;
-    height: 96vh;
+    height: 100vh;
+    width: 100vw;
     /* margin-bottom: 50px; */
     margin: 0 0;
     padding: 0;
@@ -115,7 +116,7 @@ div:first-child {
     opacity: 0.5;
     position: absolute;
     top: 0;
-    left: 0;
+    left: 0;   
     background-color: black;
     height: 100%;
     width: 100%;
