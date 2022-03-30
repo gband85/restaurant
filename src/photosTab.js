@@ -1,18 +1,18 @@
 const photosTab = () => {
-    // main.innerHTML = "";
-    if (document.querySelector('.hero')!=null) {
-        content.removeChild(document.querySelector('.hero'));
-        }
-        content.removeChild(document.querySelector('.container'));
-    const title=document.createElement("div");
-    title.className="title";
-    const titleText=document.createElement("h1");
-    titleText.textContent="Photos"
-    title.appendChild(titleText);
-    
-    const photosSection=document.createElement("div");
-    photosSection.className="photos";
-    photosSection.innerHTML=`
+  // main.innerHTML = "";
+  if (document.querySelector(".hero") != null) {
+    content.removeChild(document.querySelector(".hero"));
+  }
+  content.removeChild(document.querySelector(".container"));
+  const title = document.createElement("div");
+  title.className = "title";
+  const titleText = document.createElement("h1");
+  titleText.textContent = "Photos";
+  title.appendChild(titleText);
+
+  const photosSection = document.createElement("div");
+  photosSection.className = "photos";
+  photosSection.innerHTML = `
     <img src="../src/images/pexels-andrea-piacquadio-821054.jpg" alt="" class="photo">
     <img src="../src/images/pexels-edward-eyer-687824.jpg" alt="" class="photo">
     <img src="../src/images/pexels-helena-lopes-696218.jpg" alt="" class="photo">
@@ -25,12 +25,12 @@ const photosTab = () => {
     <img src="../src/images/pexels-terje-sollie-299347.jpg" alt="" class="photo">
     <img src="../src/images/pexels-valeria-boltneva-1484516.jpg" alt="" class="photo">
     <img src="../src/images/pexels-lisa-fotios-1126728.jpg" alt="" class="photo">
-    `
-    const container = document.createElement("div");
-    container.className="container";
-    container.appendChild(title);
-    container.appendChild(photosSection);
-        content.appendChild(container);
-}
+    `;
+  const container = document.createElement("div");
+  container.className = "container";
+  container.appendChild(title);
+  container.appendChild(photosSection);
+  content.appendChild(container);
+};
 
-export { photosTab }
+export { photosTab };
