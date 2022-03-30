@@ -89,15 +89,15 @@ main {
     padding: 0 30px 30px;
     margin-top: 50px;
 }  
-div {
-  /* background-color: white; */
+/* div {
+   background-color: white; 
   margin-top: 50px;
   justify-content: center;
   column-gap: 30px;
 }
 div:first-child {
     margin-top: 0;
-  }
+  } */
   .hero {
          background: url(./pexels-kaboompics-com-6267.jpg) no-repeat center
       center/cover;
@@ -147,7 +147,7 @@ justify-content: space-between;
 }
 .menu-section {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 /* .menu-section p {
   margin-top: 30px;
@@ -174,28 +174,28 @@ justify-content: space-between;
 .menu-item {
   margin-top: 30px;
 }
+.review {
+  margin-top: 50px;
+}
 .review p:first-child {
   text-align: left;
   /* margin-bottom: 20px; */
 }
 .review p:last-child {
   text-align: right;
+  margin-top: 30px;
 }
 #contact-div p {
   /* margin-top: 20px;
   margin-bottom: 20px; */
 }
 .contact {
-  /* display: flex; */
-
-  /* display: flex; */
-  /* justify-content: center;
-    text-align: justify;*/
-  /*  padding-left: 30px; */
+margin-top: 50px;
   text-align: center;
 }
 .photos {
   /* margin: 0 auto; */
+  margin-top: 50px;
   display: grid;
   grid-template-columns: 1fr;
   /* grid-template-rows: repeat(3,1fr); */
