@@ -1,7 +1,4 @@
 const menuTab = () => {
-  document.querySelector(".nav-list li").classList.remove("selected");
-  //document.querySelector("#contact").classList.remove("selected");
-  document.querySelector("#menu").classList.add("selected");
   if (document.querySelector(".hero") != null) {
     content.removeChild(document.querySelector(".hero"));
   }

@@ -1,7 +1,4 @@
 const homeTab = () => {
-  document.querySelector(".nav-list li").classList.remove("selected");
-  //document.querySelector("#contact").classList.remove("selected");
-  document.querySelector("#home").classList.add("selected");
   // main.innerHTML="";
   //create div
   if (document.querySelector(".hero") != null) {
