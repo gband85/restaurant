@@ -1,11 +1,13 @@
 const path = require('path');
+const { webpack } = require('webpack');
+const TerserPlugin = require("terser-webpack-plugin");
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  mode: 'development',
-  entry: './src/index.js',
-  output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist'),
+  mode: 'production',
+  entry: {
+  index:  './src/index.js',
   },
   module: {
     rules: [
@@ -14,9 +16,29 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
       },
       {
+
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
+      },
+      {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: 'asset/resource',
       },
     ],
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: 'Riverside Restaurant',
+    }),
+  ],
+  optimization: {
+    minimizer: [
+      new TerserPlugin(),
+      new CssMinimizerPlugin(),
+    ],
+  },
+  output: {
+    filename: '[name].bundle.js',
+    path: path.resolve(__dirname, 'dist'),
   },
 };
