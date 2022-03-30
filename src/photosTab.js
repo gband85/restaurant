@@ -1,3 +1,11 @@
+function importAll(r) {
+  let images = {};
+  r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
+  return images;
+}
+
+const images = importAll(require.context('./images', false, /\.(png|jpe?g|svg)$/));
+
 const photosTab = () => {
   // main.innerHTML = "";
   if (document.querySelector(".hero") != null) {
@@ -14,7 +22,7 @@ const photosTab = () => {
   photosSection.className = "photos";
   photosSection.innerHTML = `
     <img src="../src/images/pexels-andrea-piacquadio-821054.jpg" alt="" class="photo">
-    <img src="../src/images/pexels-edward-eyer-687824.jpg" alt="" class="photo">
+    <img src="../src/images/pexels-edward-eyer-687824.jpg" alt="" class="photo">    
     <img src="../src/images/pexels-helena-lopes-696218.jpg" alt="" class="photo">
     <img src="../src/images/pexels-live-on-shot-2788792.jpg" alt="" class="photo">
     <img src="../src/images/pexels-mali-maeder-64208.jpg" alt="" class="photo">
