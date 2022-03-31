@@ -1,5 +1,3 @@
-import { contactTab } from "./contactTab";
-
 const headerModule = () => {
   //create header
   const header = document.createElement("header");
@@ -63,8 +61,8 @@ const headerModule = () => {
   contact.appendChild(contactLink);
 
   global.hamburger = document.createElement("i");
-  hamburger.id = "hamburger";
-  hamburger.classList.add("fa", "fa-bars");
+hamburger.id = "hamburger";
+hamburger.classList.add("fa", "fa-bars");
 
   // navList.appendChild(hamburger)
   navList.appendChild(home);
