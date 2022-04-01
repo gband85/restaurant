@@ -4,6 +4,8 @@ import { contactTab } from "./contactTab";
 import { headerModule } from "./headerModule";
 import { reviewsTab } from "./reviewsTab";
 import { photosTab } from "./photosTab";
+import "./solid.min";
+import "./fontawesome.min";
 import "./style.css";
 
 window.onload = function () {
