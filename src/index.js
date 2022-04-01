@@ -8,6 +8,27 @@ import "./solid.min";
 import "./fontawesome.min";
 import "./style.css";
 
+function getTab(tab) {
+  let page;
+switch (tab) {
+case "home":
+  page=homeTab();
+ break;
+ case "menu":
+   page=menuTab();
+   break;
+ case "reviews":
+   page=reviewsTab();
+   break;
+ case "photos":
+   page=photosTab();
+   break;
+   case "contact":
+     page=contactTab();
+     break;
+}
+return page;
+}
 window.onload = function () {
   // homeTab();
   if (window.innerWidth >= 600) {
@@ -18,10 +39,9 @@ window.onload = function () {
     navList.style.display = "none";
   }
 };
-global.content = document.createElement("div");
 content.id="content";
-document.body.appendChild(content);
-//   global.main = document.createElement("main");
+ document.body.appendChild(content);
+  //   global.main = document.createElement("main");
 
 headerModule();
 homeTab();
