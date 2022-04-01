@@ -8,10 +8,10 @@ const images = importAll(require.context('./images', false, /\.(png|jpe?g|svg)$/
 
 const photosTab = () => {
   // main.innerHTML = "";
-  if (document.querySelector(".hero") != null) {
-    content.removeChild(document.querySelector(".hero"));
-  }
-  content.removeChild(document.querySelector(".container"));
+  // if (document.querySelector(".hero") != null) {
+  //   content.removeChild(document.querySelector(".hero"));
+  // }
+  // content.removeChild(document.querySelector(".container"));
   const title = document.createElement("div");
   title.className = "title";
   const titleText = document.createElement("h1");
@@ -38,7 +38,7 @@ const photosTab = () => {
   container.className = "container";
   container.appendChild(title);
   container.appendChild(photosSection);
-  content.appendChild(container);
+  return container;
 };
 
 export { photosTab };

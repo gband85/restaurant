@@ -62,7 +62,7 @@ const headerModule = () => {
 
   global.hamburger = document.createElement("i");
 hamburger.id = "hamburger";
-hamburger.classList.add("fa", "fa-bars");
+hamburger.classList.add("fa-solid", "fa-bars");
 
   // navList.appendChild(hamburger)
   navList.appendChild(home);
@@ -79,7 +79,7 @@ hamburger.classList.add("fa", "fa-bars");
   navbar.appendChild(navList);
   navbar.appendChild(hamburger);
   header.appendChild(navbar);
-  content.appendChild(header);
+  return header;
 };
 
 export { headerModule };

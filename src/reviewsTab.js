@@ -1,12 +1,12 @@
 const reviewsTab = () => {
-  document.querySelectorAll(".nav-list a").forEach((element) => {
-    element.classList.remove("selected");
-  });
-  document.querySelector("#reviews .link").classList.add("selected");
-  if (document.querySelector(".hero") != null) {
-    content.removeChild(document.querySelector(".hero"));
-  }
-  content.removeChild(document.querySelector(".container"));
+  // document.querySelectorAll(".nav-list a").forEach((element) => {
+  //   element.classList.remove("selected");
+  // });
+  // document.querySelector("#reviews .link").classList.add("selected");
+  // if (document.querySelector(".hero") != null) {
+  //   content.removeChild(document.querySelector(".hero"));
+  // }
+  // content.removeChild(document.querySelector(".container"));
 
   //    main.innerHTML="";
   const title = document.createElement("div");
@@ -69,8 +69,8 @@ const reviewsTab = () => {
   container.appendChild(Review3);
   container.appendChild(Review4);
   container.appendChild(Review5);
-
-  content.appendChild(container);
+return container;
+  // content.appendChild(container);
 };
 
 export { reviewsTab };

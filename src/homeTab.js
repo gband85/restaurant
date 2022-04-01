@@ -1,12 +1,12 @@
 const homeTab = () => {
   // main.innerHTML="";
   //create div
-  if (document.querySelector(".hero") != null) {
-    content.removeChild(document.querySelector(".hero"));
-  }
-  if (document.querySelector(".container") != null) {
-    content.removeChild(document.querySelector(".container"));
-  }
+  // if (document.querySelector(".hero") != null) {
+  //   content.removeChild(document.querySelector(".hero"));
+  // }
+  // if (document.querySelector(".container") != null) {
+  //   content.removeChild(document.querySelector(".container"));
+  // }
 
   const hero = document.createElement("div");
   hero.className = "hero";
@@ -43,14 +43,15 @@ const homeTab = () => {
   const address = document.createElement("p");
   address.innerHTML = "19125 First Street<br>North City, NE 27386";
   location.appendChild(address);
-  content.appendChild(hero);
+  // content.appendChild(hero);
   const container = document.createElement("div");
   container.className = "container";
   //add to content div
+  container.appendChild(hero);
   container.appendChild(hours);
   container.appendChild(location);
 
-  content.appendChild(container);
+  return container;
 };
 
 export { homeTab };

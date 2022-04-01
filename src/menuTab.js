@@ -1,8 +1,8 @@
 const menuTab = () => {
-  if (document.querySelector(".hero") != null) {
-    content.removeChild(document.querySelector(".hero"));
-  }
-  content.removeChild(document.querySelector(".container"));
+  // if (document.querySelector(".hero") != null) {
+  //   content.removeChild(document.querySelector(".hero"));
+  // }
+  // content.removeChild(document.querySelector(".container"));
   // main.innerHTML = "";
   const title = document.createElement("div");
   title.className = "title";
@@ -79,8 +79,8 @@ const menuTab = () => {
   container.appendChild(riceSection);
   container.appendChild(sandwichSection);
   container.appendChild(drinkSection);
-
-  content.appendChild(container);
+return container;
+  // content.appendChild(container);
 };
 
 export { menuTab };

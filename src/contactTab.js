@@ -1,8 +1,8 @@
 const contactTab = () => {
-  if (document.querySelector(".hero") != null) {
-    content.removeChild(document.querySelector(".hero"));
-  }
-  content.removeChild(document.querySelector(".container"));
+  // if (document.querySelector(".hero") != null) {
+  //   content.removeChild(document.querySelector(".hero"));
+  // }
+  // content.removeChild(document.querySelector(".container"));
   const container = document.createElement("div");
   container.className = "container";
   // container.innerHTML="";
@@ -39,7 +39,7 @@ const contactTab = () => {
   container.appendChild(contact2);
   container.appendChild(contact3);
 
-  content.appendChild(container);
+  return container;
 };
 
 export { contactTab };
