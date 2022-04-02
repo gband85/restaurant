@@ -4,8 +4,10 @@ import { contactTab } from "./contactTab";
 import { headerModule } from "./headerModule";
 import { reviewsTab } from "./reviewsTab";
 import { photosTab } from "./photosTab";
-import "./solid.min";
-import "./fontawesome.min";
+// import "./solid.min";
+// import "./fontawesome.min";
+import './fontawesome.min.css';
+import './solid.min.css';
 import "./style.css";
 
 function getTab(tab) {
@@ -44,7 +46,7 @@ function getTab(tab) {
     hamburger.style.display = "none";
     navList.style.display = "flex";
   } else {
-    hamburger.style.display = "block";
+    hamburger.style.display = "inline";
     navList.style.display = "none";
   }
 // };
@@ -70,7 +72,7 @@ window.addEventListener("resize", function () {
     hamburger.style.display = "none";
     navList.style.display = "flex";
   } else {
-    hamburger.style.display = "block";
+    hamburger.style.display = "inline";
     navList.style.display = "none";
   }
 });
