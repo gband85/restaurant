@@ -179,12 +179,12 @@ header {
   }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 950px) {
   .photos {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1100px) {
   .photos {
     grid-template-columns: repeat(4, 1fr);
   }
