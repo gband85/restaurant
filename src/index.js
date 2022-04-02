@@ -10,27 +10,36 @@ import "./style.css";
 
 function getTab(tab) {
   let page;
-switch (tab) {
-case "home":
-  page=homeTab();
- break;
- case "menu":
-   page=menuTab();
-   break;
- case "reviews":
-   page=reviewsTab();
-   break;
- case "photos":
-   page=photosTab();
-   break;
-   case "contact":
-     page=contactTab();
-     break;
+  switch (tab) {
+    case "home":
+      page = homeTab();
+      break;
+    case "menu":
+      page = menuTab();
+      break;
+    case "reviews":
+      page = reviewsTab();
+      break;
+    case "photos":
+      page = photosTab();
+      break;
+    case "contact":
+      page = contactTab();
+      break;
+  }
+  return page;
 }
-return page;
-}
-window.onload = function () {
-  // homeTab();
+// window.onload = function () {
+  const content = document.createElement("div");
+  content.id = "content";
+  const header = headerModule();
+  content.appendChild(header);
+  let page = getTab("home");
+
+  content.appendChild(page.hero);
+  content.appendChild(page.container);
+  document.body.appendChild(content);
+
   if (window.innerWidth >= 600) {
     hamburger.style.display = "none";
     navList.style.display = "flex";
@@ -38,18 +47,17 @@ window.onload = function () {
     hamburger.style.display = "block";
     navList.style.display = "none";
   }
-};
-content.id="content";
- document.body.appendChild(content);
-  //   global.main = document.createElement("main");
+// };
 
-headerModule();
-homeTab();
+//   global.main = document.createElement("main");
+
+// headerModule();
+// homeTab();
 // }
 // const navbar=document.getElementById("navbar");
 // const navList=document.getElementById("nav-list");
 //  navList.style.display="none";
-hamburger.addEventListener("click", function () {
+document.querySelector("#hamburger").addEventListener("click", function () {
   if (navList.style.display == "none") {
     navList.style.display = "flex";
   } else {
@@ -68,31 +76,64 @@ window.addEventListener("resize", function () {
 });
 
 document.querySelector("#home").addEventListener("click", function () {
-  homeTab();
+  if (document.querySelector(".hero")!=null) {
+    content.removeChild(document.querySelector(".hero"))
+  }
+  content.removeChild(document.querySelector(".container"));
+  let page = getTab("home");
+
+  content.appendChild(page.hero);
+  content.appendChild(page.container);
+  document.body.appendChild(content);
   if (window.innerWidth < 600) {
     navList.style.display = "none";
   }
 });
 document.querySelector("#menu").addEventListener("click", function () {
-  menuTab();
+  if (document.querySelector(".hero")!=null) {
+    content.removeChild(document.querySelector(".hero"))
+  }
+  content.removeChild(document.querySelector(".container"));
+  let page=getTab("menu");
+  content.appendChild(page);
+  document.body.appendChild(content);
+  // menuTab();
   if (window.innerWidth < 600) {
     navList.style.display = "none";
   }
 });
 document.querySelector("#reviews").addEventListener("click", function () {
-  reviewsTab();
+  if (document.querySelector(".hero")!=null) {
+    content.removeChild(document.querySelector(".hero"))
+  };
+  content.removeChild(document.querySelector(".container"));
+  let page=getTab("reviews");
+    content.appendChild(page);
+  document.body.appendChild(content);
   if (window.innerWidth < 600) {
     navList.style.display = "none";
   }
 });
 document.querySelector("#photos").addEventListener("click", function () {
-  photosTab();
+  if (document.querySelector(".hero")!=null) {
+    content.removeChild(document.querySelector(".hero"))
+  }
+  content.removeChild(document.querySelector(".container"));
+  let page = getTab("photos");
+  content.appendChild(page);
+  document.body.appendChild(content);
   if (window.innerWidth < 600) {
     navList.style.display = "none";
   }
 });
 document.querySelector("#contact").addEventListener("click", function () {
-  contactTab();
+  if (document.querySelector(".hero")!=null) {
+    content.removeChild(document.querySelector(".hero"))
+  }
+  content.removeChild(document.querySelector(".container"));
+  let page=getTab("contact")
+  content.appendChild(page);;
+  document.body.appendChild(content);
   if (window.innerWidth < 600) {
     navList.style.display = "none";
   }
