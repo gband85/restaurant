@@ -23,6 +23,11 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 10px;
+  color: #fff;
+}
+.navbar svg {
+  color: #fff;
+  z-index: 2000;
 }
 .logo {
   text-decoration: none;
@@ -42,10 +47,12 @@ header {
   justify-self: end;
   grid-row: 1/2;
   font-size: 1.6em;
+  color: #fff;
+  grid-column: 2/3;
 }
 .nav-list {
   list-style: none;
-  display: none;
+  /* display: none; */
   flex-direction: column;
   justify-self: center;
   grid-row: 2/3;
@@ -60,6 +67,7 @@ header {
   display: block;
   text-decoration: none;
   text-align: center;
+  color: #fff;
 }
 .nav-list a:visited {
   color: white;
