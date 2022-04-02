@@ -51,7 +51,7 @@ const homeTab = () => {
   container.appendChild(hours);
   container.appendChild(location);
 
-  return container;
+  return { container, hero };
 };
 
 export { homeTab };
