@@ -105,7 +105,7 @@ header {
 }
 #hours {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 #hours div {
   display: flex;
@@ -114,6 +114,7 @@ header {
 }
 #location {
   text-align: center;
+margin-top: 50px;
 }
 .title {
   text-align: center;
