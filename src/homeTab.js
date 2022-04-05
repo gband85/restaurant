@@ -1,13 +1,6 @@
-const homeTab = () => {
-  // main.innerHTML="";
-  //create div
-  // if (document.querySelector(".hero") != null) {
-  //   content.removeChild(document.querySelector(".hero"));
-  // }
-  // if (document.querySelector(".container") != null) {
-  //   content.removeChild(document.querySelector(".container"));
-  // }
+import home from './home.html'
 
+const homeTab = () => {
   const hero = document.createElement("div");
   hero.className = "hero";
   const titleText = document.createElement("h1");
@@ -51,7 +44,7 @@ const homeTab = () => {
   container.appendChild(hours);
   container.appendChild(location);
 
-  return { container, hero };
+  return home;
 };
 
 export { homeTab };
