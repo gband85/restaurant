@@ -36,11 +36,13 @@ function getTab(tab) {
   content.id = "content";
   const header = headerModule();
   content.appendChild(header);
+  
   let page = getTab("home");
 
   content.appendChild(page.hero);
   content.appendChild(page.container);
   document.body.appendChild(content);
+  const hamburger= document.querySelector("#hamburger")
 
   if (window.innerWidth >= 600) {
     hamburger.style.display = "none";
@@ -59,7 +61,7 @@ function getTab(tab) {
 // const navbar=document.getElementById("navbar");
 // const navList=document.getElementById("nav-list");
 //  navList.style.display="none";
-const hamburger= document.querySelector("#hamburger")
+
 hamburger.addEventListener("click", function () {
   if (navList.style.display == "none") {
     navList.style.display = "flex";
