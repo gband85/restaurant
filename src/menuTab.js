@@ -3,15 +3,14 @@ const menuTab = () => {
   //   content.removeChild(document.querySelector(".hero"));
   // }
   // content.removeChild(document.querySelector(".container"));
-  // main.innerHTML = "";
-  const title = document.createElement("div");
-  title.className = "title";
-  const titleText = document.createElement("h1");
-  titleText.textContent = "Menu";
-  title.appendChild(titleText);
-  const burgerSection = document.createElement("div");
-  burgerSection.className = "menu-section";
-  burgerSection.innerHTML = `
+  const container = document.createElement("div");
+  container.className = "container";
+  container.innerHTML=`
+  <div class="title">
+  <h1>Menu</h1>
+  </div>
+
+  <div class="menu-section">
     <p class="menu-title">BURGERS</p>
     <p class="menu-item">CLASSIC / 25</p>
     <p>A beef patty with caramelized onions,
@@ -25,10 +24,9 @@ const menuTab = () => {
     <p>Three quarter-pounder patties stuffed
     between potato buns. Can you handle
     this?</p>
-    `;
-  const riceSection = document.createElement("div");
-  riceSection.className = "menu-section";
-  riceSection.innerHTML = `
+    </div>
+
+    <div class="menu-section">
         <p class="menu-title">RICE MEALS</p>
         <p class="menu-item">PORK STEAK / 20</p>
         <p>Pork steak served with rice and a side
@@ -40,10 +38,9 @@ const menuTab = () => {
         <p>A 20 oz. steak, medium rare, served
         with mashed potatoes and mixed
         vegetables.</p>
-        `;
-  const sandwichSection = document.createElement("div");
-  sandwichSection.className = "menu-section";
-  sandwichSection.innerHTML = `
+        </div>
+
+        <div class="menu-section">
         <p class="menu-title">SANDWICHES</p>
         <p class="menu-item">VEGAN PANINI / 15</p>
         <p>Roasted vegetables, in ciabatta,
@@ -54,10 +51,10 @@ const menuTab = () => {
         <p class="menu-item">3-CHEESE / 20</p>
         <p>Swiss, chepar, and mozzarella, in a
         grilled sandwich slathered with
-        butter.</p>`;
-  const drinkSection = document.createElement("div");
-  drinkSection.className = "menu-section";
-  drinkSection.innerHTML = `
+        butter.</p>
+        </div>
+
+        <div class="menu-section">
         <p class="menu-title">DRINKS</p>
         <p class="menu-item">JUICE / 5 PER GLASS</p>
         <p>Choice of orange, lemon, watermelon,
@@ -66,21 +63,10 @@ const menuTab = () => {
         <p>Mixed with milk, and served over ice
         and topped with chocolate syrup.</p>
         <p class="menu-item">SHAKE / 15</p>
-        <p>Watermelon, mango, strawberry-banana, mixed berries, or citrus.</p>`;
-  // content.innerHTML="";
-  //const main = document.querySelector("main");
-  // content.removeChild(main)
-  //headerModule();
-  //    main.innerHTML="";
-  const container = document.createElement("div");
-  container.className = "container";
-  container.appendChild(title);
-  container.appendChild(burgerSection);
-  container.appendChild(riceSection);
-  container.appendChild(sandwichSection);
-  container.appendChild(drinkSection);
+        <p>Watermelon, mango, strawberry-banana, mixed berries, or citrus.</p>
+        </div>`;
+
 return container;
-  // content.appendChild(container);
 };
 
 export { menuTab };
