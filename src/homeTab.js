@@ -1,50 +1,38 @@
-import home from './home.html'
-
 const homeTab = () => {
-  const hero = document.createElement("div");
-  hero.className = "hero";
-  const titleText = document.createElement("h1");
-  titleText.textContent = "Riverside Restaurant";
-  hero.appendChild(titleText);
+  const hero=document.createElement("div");
+  hero.className="hero"
+  hero.innerHTML=`
+  <h1>Riverside Restaurant</h1>`
 
-  //add hours
-  const hours = document.createElement("div");
-  hours.id = "hours";
-  hours.innerHTML = `
-    <div class="days">
-    <p>Sunday</p>
-    <p>Monday</p>
-    <p>Tuesday</p>
-    <p>Wednesday</p>
-    <p>Thursday</p>
-    <p>Friday</p> 
-    <p>Saturday</p>
-</div>
-<div class="times">
-    <p>12-5PM</p>
-    <p>8AM-8PM</p>
-    <p>8AM-8PM</p>
-    <p>8AM-8PM</p>
-    <p>8AM-8PM</p>
-    <p>8AM-8PM</p> 
-    <p>12-5PM</p>
-    </div>
-    `;
-  //add address
-  const location = document.createElement("div");
-  location.id = "location";
-  const address = document.createElement("p");
-  address.innerHTML = "19125 First Street<br>North City, NE 27386";
-  location.appendChild(address);
-  // content.appendChild(hero);
-  const container = document.createElement("div");
-  container.className = "container";
-  //add to content div
-  container.appendChild(hero);
-  container.appendChild(hours);
-  container.appendChild(location);
+  const container=document.createElement("div");
+container.className="container"
+container.innerHTML=`
+    <div id="hours">
+      <div class="days">
+          <p>Sunday</p>
+          <p>Monday</p>
+          <p>Tuesday</p>
+          <p>Wednesday</p>
+          <p>Thursday</p>
+          <p>Friday</p> 
+          <p>Saturday</p>
+      </div>
+      <div class="times">
+          <p>12-5PM</p>
+          <p>8AM-8PM</p>
+          <p>8AM-8PM</p>
+          <p>8AM-8PM</p>
+          <p>8AM-8PM</p>
+          <p>8AM-8PM</p> 
+          <p>12-5PM</p>
+          </div>
+  </div>
+  <div id="location">
+      <p>19125 First Street<br>North City, NE 27386</p>
+  </div>
+  `
 
-  return home;
+  return {hero,container};
 };
 
 export { homeTab };
