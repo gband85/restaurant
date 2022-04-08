@@ -78,15 +78,16 @@ window.addEventListener("resize", function () {
 });
 
 document.querySelector("#home").addEventListener("click", function () {
-  // if (document.querySelector(".hero")!=null) {
-  //   content.removeChild(document.querySelector(".hero"))
-  // }
-  // content.removeChild(document.querySelector(".container"));
+  //remove hero if exists
+  if (document.querySelector(".hero")!=null) {
+    content.removeChild(document.querySelector(".hero"))
+  }
+  content.removeChild(document.querySelector(".container"));
   let page = getTab("home");
 
-  content.appendChild(page);
-  // content.appendChild(page.container);
-  // document.body.appendChild(content);
+  content.appendChild(page.hero);
+  content.appendChild(page.container);
+  document.body.appendChild(content);
   if (window.innerWidth < 600) {
     navList.style.display = "none";
   }
