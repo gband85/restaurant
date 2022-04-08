@@ -42,6 +42,7 @@ function getTab(tab) {
   content.appendChild(page.hero);
   content.appendChild(page.container);
   document.body.appendChild(content);
+  const navList=document.querySelector(".nav-list");
   const hamburger= document.querySelector("#hamburger")
 
   if (window.innerWidth >= 600) {
