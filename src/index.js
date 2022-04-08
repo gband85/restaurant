@@ -59,7 +59,8 @@ function getTab(tab) {
 // const navbar=document.getElementById("navbar");
 // const navList=document.getElementById("nav-list");
 //  navList.style.display="none";
-document.querySelector("#hamburger").addEventListener("click", function () {
+const hamburger= document.querySelector("#hamburger")
+hamburger.addEventListener("click", function () {
   if (navList.style.display == "none") {
     navList.style.display = "flex";
   } else {
@@ -78,7 +79,7 @@ window.addEventListener("resize", function () {
 });
 
 document.querySelector("#home").addEventListener("click", function () {
-  //remove hero if exists
+  //remove hero if it exists
   if (document.querySelector(".hero")!=null) {
     content.removeChild(document.querySelector(".hero"))
   }
