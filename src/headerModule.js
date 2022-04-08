@@ -4,7 +4,7 @@ const headerModule = () => {
   header.id = "header";
   header.innerHTML=`<nav class="navbar">
   <a href="index.html" class="logo">RSR</a>
-  <ul>
+  <ul class="nav-list">
       <li id="home"><button class="link">Home</button></li>
       <li id="menu"><button class="link">Menu</button></li>
       <li id="reviews"><button class="link">Reviews</button></li>
