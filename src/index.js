@@ -47,10 +47,12 @@ function getTab(tab) {
 
   if (window.innerWidth >= 600) {
     hamburger.style.display = "none";
-    navList.style.display = "flex";
+    navList.classList.add("desktop");
+    navList.classList.remove("hide")
   } else {
     hamburger.style.display = "inline";
-    navList.style.display = "none";
+    navList.classList.remove("desktop")
+    navList.classList.add("hide")
   }
 // };
 
@@ -64,20 +66,19 @@ function getTab(tab) {
 //  navList.style.display="none";
 
 hamburger.addEventListener("click", function () {
-  if (navList.style.display == "none") {
-    navList.style.display = "flex";
-  } else {
-    navList.style.display = "none";
-  }
+navList.classList.toggle("hide");
 });
 
 window.addEventListener("resize", function () {
   if (window.innerWidth >= 600) {
     hamburger.style.display = "none";
-    navList.style.display = "flex";
+    navList.classList.remove("hide")
+    navList.classList.add("desktop")
+    //navList.style.display = "flex";
   } else {
     hamburger.style.display = "inline";
-    navList.style.display = "none";
+    navList.classList.add("hide")
+    navList.classList.remove("desktop")
   }
 });
 
@@ -93,7 +94,7 @@ document.querySelector("#home").addEventListener("click", function () {
   content.appendChild(page.container);
   document.body.appendChild(content);
   if (window.innerWidth < 600) {
-    navList.style.display = "none";
+    navList.classList.add("hide")
   }
 });
 document.querySelector("#menu").addEventListener("click", function () {
@@ -106,7 +107,7 @@ document.querySelector("#menu").addEventListener("click", function () {
   document.body.appendChild(content);
   // menuTab();
   if (window.innerWidth < 600) {
-    navList.style.display = "none";
+    navList.classList.add("hide")
   }
 });
 document.querySelector("#reviews").addEventListener("click", function () {
@@ -118,7 +119,7 @@ document.querySelector("#reviews").addEventListener("click", function () {
     content.appendChild(page);
   document.body.appendChild(content);
   if (window.innerWidth < 600) {
-    navList.style.display = "none";
+    navList.classList.add("hide")
   }
 });
 document.querySelector("#photos").addEventListener("click", function () {
@@ -130,7 +131,7 @@ document.querySelector("#photos").addEventListener("click", function () {
   content.appendChild(page);
   document.body.appendChild(content);
   if (window.innerWidth < 600) {
-    navList.style.display = "none";
+    navList.classList.add("hide")
   }
 });
 document.querySelector("#contact").addEventListener("click", function () {
@@ -142,6 +143,6 @@ document.querySelector("#contact").addEventListener("click", function () {
   content.appendChild(page);;
   document.body.appendChild(content);
   if (window.innerWidth < 600) {
-    navList.style.display = "none";
+    navList.classList.add("hide")
   }
 });
