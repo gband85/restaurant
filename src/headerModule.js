@@ -2,8 +2,9 @@ const headerModule = () => {
   //create header
   const header = document.createElement("header");
   header.id = "header";
-  header.innerHTML=`<nav class="navbar">
-  <a href="index.html" class="logo">RSR</a>
+  header.innerHTML=`<a href="index.html" class="logo">RSR</a>
+  <nav class="navbar">
+  
   <ul class="nav-list">
       <li id="home"><button class="btn">Home</button></li>
       <li id="menu"><button class="btn">Menu</button></li>

@@ -1,3 +1,9 @@
+
+
+
+
+
+
 @font-face {
   font-family: "Merriweather";
   src: url("./fonts/Merriweather-Regular.ttf") format("truetype");
@@ -15,9 +21,12 @@ html {
 }
 header {
   align-items: flex-end;
-  justify-content: center;
+  justify-content: space-between;
   background-color: black;
   color: white;
+  /* width: 100%; */
+  display: flex;
+  padding: 10px;
 }
 .navbar {
   display: grid;
@@ -37,7 +46,7 @@ header {
   grid-column: 1/2;
   font-size: 1.3em;
   color: #fff;
-  padding-left: 10px;
+  /* padding-left: 10px; */
 }
 .nav {
   display: flex;
@@ -73,7 +82,7 @@ background-color: black;
   color: #fff;
   border: none;
   font-size: 18px;
-  padding: 10px;
+  /* padding: 10px; */
   margin: 0;
   height: 100%;
   font-family: "Merriweather", serif;
