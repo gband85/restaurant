@@ -3,7 +3,10 @@ const headerModule = () => {
   const header = document.createElement("header");
   header.id = "header";
   header.innerHTML=`<nav class="navbar">
+<div id="nav-buttons">
   <a href="index.html" class="logo">RSR</a>
+  <i id="hamburger" class="fa-solid fa-bars"></i>
+  </div>
      <ul class="nav-list" id="nav-list">
       <li id="home"><button class="btn">Home</button></li>
       <li id="menu"><button class="btn">Menu</button></li>
@@ -11,7 +14,7 @@ const headerModule = () => {
       <li id="photos"><button class="btn">Photos</button></li>
       <li id="contact"><button class="btn">Contact</button></li>
   </ul>
- <i id="hamburger" class="fa-solid fa-bars"></i>
+ 
 </nav>`
   
   return header;
