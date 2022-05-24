@@ -77,6 +77,11 @@ window.addEventListener("resize", function () {
     //navList.style.display = "flex";
   } else {
     hamburger.style.display = "inline";
+    //unset transition, hide menu,set transition
+    navList.style.transition="unset";
+    setTimeout(function(){
+navList.style.transition="all .5s ease-in-out"
+    },100)
     navList.classList.add("hide")
     navList.classList.remove("desktop")
   }
